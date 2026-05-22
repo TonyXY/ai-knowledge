@@ -85,7 +85,7 @@ export default defineConfig({
         {
           text: '进阶技巧',
           items: [
-            { text: '思维链 (CoT)', link: '/prompts/cot' },
+            { text: '思维链 (CoT)', link: '/terms/cot' },
             { text: 'System Prompt 设计', link: '/prompts/system-prompt' },
             { text: '结构化提示词', link: '/prompts/structured-prompt' }
           ]
