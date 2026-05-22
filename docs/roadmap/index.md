@@ -108,8 +108,8 @@ description: 循序渐进学习 AI 的完整路径
 难度标识：<DifficultyBadge level="beginner" /> 无前置要求 · <DifficultyBadge level="intermediate" /> 需入门基础 · <DifficultyBadge level="advanced" /> 需实践经验
 
 <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
-  <a href="/terms/" class="btn">开始第 1 周 → 📖 术语</a>
-  <a href="/prompts/" class="btn btn-alt">跳转到第 2 周 → 💬 提示词</a>
+  <a href="../terms/" class="btn">开始第 1 周 → 📖 术语</a>
+  <a href="../prompts/" class="btn btn-alt">跳转到第 2 周 → 💬 提示词</a>
 </div>
 
 <style>

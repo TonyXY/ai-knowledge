@@ -10,19 +10,19 @@ description: 深入模型底层的进阶概念
 建议先掌握 🟢 入门和 🟡 进阶术语再阅读本页：
 
 <div class="card-grid">
-  <a href="/terms/moe" class="card">
+  <a href="./moe" class="card">
     <h3>MoE</h3>
     <p>混合专家模型——高效扩展模型规模</p>
   </a>
-  <a href="/terms/cot" class="card">
+  <a href="./cot" class="card">
     <h3>思维链 (CoT)</h3>
     <p>引导模型逐步推理的技术</p>
   </a>
-  <a href="/terms/rlhf" class="card">
+  <a href="./rlhf" class="card">
     <h3>RLHF</h3>
     <p>基于人类反馈的强化学习</p>
   </a>
-  <a href="/terms/kv-cache" class="card">
+  <a href="./kv-cache" class="card">
     <h3>KV Cache</h3>
     <p>加速推理的关键优化技术</p>
   </a>
