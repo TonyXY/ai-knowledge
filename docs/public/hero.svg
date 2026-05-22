@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="85" fill="url(#g)" opacity="0.08"/>
+  <circle cx="100" cy="100" r="60" fill="url(#g)" opacity="0.12"/>
+  <text x="100" y="112" text-anchor="middle" font-size="60" font-weight="700" font-family="system-ui" fill="url(#g)">AI</text>
+  <circle cx="40" cy="40" r="8" fill="#a855f7" opacity="0.3"/>
+  <circle cx="160" cy="50" r="5" fill="#6366f1" opacity="0.3"/>
+  <circle cx="150" cy="155" r="6" fill="#ec4899" opacity="0.3"/>
+  <circle cx="45" cy="160" r="4" fill="#a855f7" opacity="0.3"/>
+</svg>
