@@ -25,7 +25,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx vitepress build docs --base=/ai-knowledge/
+
+      - name: Fix base path in static HTML/JS
+        run: node scripts/fix-base-links.mjs
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
