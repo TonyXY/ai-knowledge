@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/ai-knowledge/',
   title: 'AI 知识学习',
   description: '系统学习 AI 知识 — 术语·提示词·工具·实操',
   lang: 'zh-CN',
