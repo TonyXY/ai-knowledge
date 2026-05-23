@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npx vitepress build docs --base=/ai-knowledge/
+        run: npx vitepress build docs
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
