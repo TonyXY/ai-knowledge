@@ -1,14 +1,16 @@
 import { defineConfig } from 'vitepress'
 
+const base = '/ai-knowledge/'
+
 export default defineConfig({
-  base: '/ai-knowledge/',
+  base,
   title: 'AI 知识学习',
   description: '系统学习 AI 知识 — 术语·提示词·工具·实操',
   lang: 'zh-CN',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico', sizes: '32x32' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '32x32' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
     ['meta', { name: 'theme-color', content: '#6366f1' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
