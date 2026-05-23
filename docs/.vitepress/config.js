@@ -160,7 +160,7 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xiaoyang/ai-knowledge' }
+      { icon: 'github', link: 'https://github.com/TonyXY/ai-knowledge' }
     ],
 
     // 页脚
@@ -171,7 +171,7 @@ export default defineConfig({
 
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/xiaoyang/ai-knowledge/edit/main/docs/:path'
+      pattern: 'https://github.com/TonyXY/ai-knowledge/edit/main/docs/:path'
     }
   }
 })
