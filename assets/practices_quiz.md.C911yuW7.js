@@ -1,23 +1,14 @@
 import{_ as s,O as n,H as e,f as o,k as i,i as r}from"./chunks/framework.Pt2pSV98.js";const m=JSON.parse('{"title":"实操知识测验","description":"检验你对 RAG、流式响应、AI 编程方法论和最佳实践的掌握程度","frontmatter":{"title":"实操知识测验","description":"检验你对 RAG、流式响应、AI 编程方法论和最佳实践的掌握程度","difficulty":"intermediate"},"headers":[],"relativePath":"practices/quiz.md","filePath":"practices/quiz.md"}'),l={name:"practices/quiz.md"};function p(u,a,d,c,g,h){const t=n("DifficultyBadge");return e(),o("div",null,[i(t,{level:"intermediate"}),a[0]||(a[0]=r(`<h1 id="实操知识测验" tabindex="-1">实操知识测验 <a class="header-anchor" href="#实操知识测验" aria-label="Permalink to &quot;实操知识测验&quot;">​</a></h1><p>从 RAG 原理到 AI 编程方法论，检验你的实操知识是否扎实。</p><hr><h2 id="选择题" tabindex="-1">选择题 <a class="header-anchor" href="#选择题" aria-label="Permalink to &quot;选择题&quot;">​</a></h2><h3 id="q1-rag-的完整流程是什么" tabindex="-1">Q1：RAG 的完整流程是什么？ <a class="header-anchor" href="#q1-rag-的完整流程是什么" aria-label="Permalink to &quot;Q1：RAG 的完整流程是什么？&quot;">​</a></h3><pre><code>A. 只检索 → 不生成
-
 B. 检索 → 生成（先检索相关知识再让 LLM 回答）
-
 C. 只生成 → 不检索
-
 D. 随机生成 → 再检索确认
 </code></pre><details><summary>查看答案</summary><p><strong>正确答案：B</strong></p><p>RAG（Retrieval-Augmented Generation，检索增强生成）的完整流程是**「先检索，再生成」**：</p><ol><li><strong>索引阶段</strong>（离线）：文档 → 分块 → Embedding（向量化）→ 存入向量数据库</li><li><strong>检索阶段</strong>（运行时）：用户问题 → Embedding → 在向量数据库中检索 Top-K 相关片段</li><li><strong>生成阶段</strong>：将问题 + 检索到的相关片段一起交给 LLM，让 LLM 基于这些&quot;参考资料&quot;生成回答</li></ol><p>这种架构解决了 LLM 的两大痛点：</p><ul><li><strong>知识截止日期</strong>：通过检索获取最新信息</li><li><strong>幻觉问题</strong>：有据可查，回答可追溯来源</li></ul></details><h3 id="q2-streaming-流式响应-的主要作用是什么" tabindex="-1">Q2：Streaming（流式响应）的主要作用是什么？ <a class="header-anchor" href="#q2-streaming-流式响应-的主要作用是什么" aria-label="Permalink to &quot;Q2：Streaming（流式响应）的主要作用是什么？&quot;">​</a></h3><pre><code>A. 让回答更准确
-
 B. 减少首字延迟，提升用户体验
-
 C. 降低 API 费用
-
 D. 增加回答长度
 </code></pre><details><summary>查看答案</summary><p><strong>正确答案：B</strong></p><p>Streaming 的核心目的是<strong>减少首字延迟（Time to First Token, TTFT）</strong>，从而提升用户体验：</p><ul><li><strong>非流式</strong>：LLM 生成完所有 token 后一次性返回，用户需要等待整个回答完成才能看到内容（可能等几秒到几十秒）</li><li><strong>流式</strong>：LLM 每生成一个 token 就立即发送，用户可以<strong>实时看到文字逐字出现</strong>，就像真人在打字</li></ul><p>虽然技术上不改变回答的准确性和最终长度，但这种&quot;即时反馈&quot;极大改善了交互体验——你不会盯着空白屏幕等答案，而是能同步看到 AI 的思考过程。这也是 ChatGPT、Claude 等所有主流产品都使用流式输出的原因。</p></details><h3 id="q3-在用-ai-编程时-第一步应该做什么" tabindex="-1">Q3：在用 AI 编程时，第一步应该做什么？ <a class="header-anchor" href="#q3-在用-ai-编程时-第一步应该做什么" aria-label="Permalink to &quot;Q3：在用 AI 编程时，第一步应该做什么？&quot;">​</a></h3><pre><code>A. 直接让 AI 写完整代码
-
 B. 先清晰描述需求和约束条件
-
 C. 让 AI 先选框架
-
 D. 先把所有代码写完再问 AI
 </code></pre><details><summary>查看答案</summary><p><strong>正确答案：B</strong></p><p>**「先清晰描述需求和约束条件」**是 AI 编程的第一步，也是最关键的一步。</p><p>好的提问模式：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ &quot;帮我写个网站&quot;</span></span>
 <span class="line"><span>✅ &quot;我需要一个响应式个人博客，包含首页文章列表、文章详情页、</span></span>
