@@ -5,7 +5,7 @@ description: 主流 AI 工具评测与选型指南——对话助手、编程助
 
 # 🛠️ AI 工具
 
-工欲善其事，必先利其器。这里整理了当下最主流的 AI 工具，按类型分为五大类，帮你快速找到适合你的那一款。
+工欲善其事，必先利其器。这里整理了当下最主流的 AI 工具，按类型分为六大类，帮你快速找到适合你的那一款。
 
 ::: tip 💡 选工具前先选模型
 每个工具背后是不同的 AI 模型。不了解各模型差异？先看 **[大模型对比](/tools/model-comparison)**——Benchmark、价格、能力一目了然。
@@ -88,6 +88,27 @@ AI 图像生成，从照片级写实到概念艺术，应有尽有。
 
 ---
 
+## 🎨 设计工具
+
+AI 助力 UI/UX 设计和平面设计，从线框图到成品一步到位。
+
+<div class="card-grid">
+  <a href="./canva-ai" class="card">
+    <h3>Canva AI</h3>
+    <p>AI 文生设计、魔术扩图——人人都能用的在线设计工具</p>
+  </a>
+  <a href="./galileo-ai" class="card">
+    <h3>Galileo AI</h3>
+    <p>文字描述直接生成 UI 设计稿，加速产品设计流程</p>
+  </a>
+  <a href="./uizard" class="card">
+    <h3>Uizard</h3>
+    <p>截图转设计稿、文字转原型，快速从想法到原型</p>
+  </a>
+</div>
+
+---
+
 ## 🤔 怎么选？
 
 | 场景 | 推荐工具 |
@@ -97,5 +118,6 @@ AI 图像生成，从照片级写实到概念艺术，应有尽有。
 | 代码开发 | Cursor / Copilot |
 | 预算有限 | DeepSeek（API）/ Kimi（免费） |
 | 画图 | Midjourney（艺术）/ DALL·E（易用）/ SD（免费） |
+| 设计 | Canva AI（平面）/ Galileo AI（UI）/ Uizard（原型） |
 
 每个工具页都标注了难度等级 —— <DifficultyBadge level="beginner" /> 表示无门槛上手，<DifficultyBadge level="intermediate" /> 需要一定基础。

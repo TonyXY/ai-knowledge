@@ -177,6 +177,14 @@ export default defineConfig({
           ]
         },
         {
+          text: '设计工具',
+          items: [
+            { text: 'Canva AI', link: '/tools/canva-ai' },
+            { text: 'Galileo AI', link: '/tools/galileo-ai' },
+            { text: 'Uizard', link: '/tools/uizard' }
+          ]
+        },
+        {
           text: '视频与音频',
           items: [
             { text: 'Sora', link: '/tools/sora' },
