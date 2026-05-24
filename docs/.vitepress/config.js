@@ -35,6 +35,10 @@ export default defineConfig({
     sidebar: {
       '/terms/': [
         {
+          text: '🕸️ 术语关联图',
+          link: '/terms/graph'
+        },
+        {
           text: '📜 发展历程',
           link: '/terms/history'
         },
