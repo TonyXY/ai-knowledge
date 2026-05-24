@@ -256,6 +256,7 @@ export default defineConfig({
           ]
         }
       ],
+    },
 
     // 页脚
     footer: {
