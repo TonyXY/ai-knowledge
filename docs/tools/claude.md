@@ -67,3 +67,4 @@ Claude 3.5 Sonnet 在代码生成和理解方面表现顶尖，尤其擅长：
 - [用 Claude 分析文档](/practices/claude-analysis)
 - [思维链 (CoT)](/terms/cot) —— Claude 的强项
 - [System Prompt 设计](/prompts/system-prompt) —— Claude 对系统提示词响应极好
+- [OpenAI API 入门](/dev/openai-api) — Anthropic API 调用方式类似

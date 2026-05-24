@@ -347,3 +347,4 @@ vercel
 - [Function Calling](/terms/function-calling) —— 让聊天机器人调用外部工具
 - [Agent](/terms/agent) —— 比聊天机器人更强大的 AI 智能体
 - [搭建 RAG 知识库](/practices/rag-knowledge-base) —— 让聊天机器人回答私有文档
+- [流式响应 (Streaming)](/dev/streaming) — 实现打字机效果的实时对话

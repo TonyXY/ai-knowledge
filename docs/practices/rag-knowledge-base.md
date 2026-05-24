@@ -394,3 +394,4 @@ prompt = ChatPromptTemplate.from_template("""
 - [Embedding](/terms/embedding)
 - [向量数据库](/terms/vector-db)
 - [用 Claude 分析文档](/practices/claude-analysis) —— 单次文档分析的更简单方案
+- [RAG 深度实践](/dev/rag-deep) — 分块策略、Embedding 选型、Re-ranking 进阶

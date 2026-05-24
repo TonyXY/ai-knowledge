@@ -74,3 +74,5 @@ API 价格极低：输入 $0.27/M tokens，输出 $1.10/M tokens。对比 GPT-4o
 
 - [Prompt 批量生成](/practices/prompt-batch) —— 使用 DeepSeek API 的实战教程
 - [LLM](/terms/llm)、[开源模型 vs 闭源模型](/terms/parameters)
+- [OpenAI API 入门](/dev/openai-api) — DeepSeek 兼容 OpenAI API 格式
+- [推理模型使用](/dev/reasoning-models) — DeepSeek-R1 的使用技巧
