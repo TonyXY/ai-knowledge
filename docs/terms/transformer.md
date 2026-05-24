@@ -12,6 +12,8 @@ difficulty: intermediate
 
 Transformer 是 2017 年 Google 在论文《Attention Is All You Need》中提出的神经网络架构，用**自注意力机制**替代了传统的循环结构，让模型可以并行处理整个序列，成为 GPT、BERT、Claude 等所有现代大语言模型的基石。
 
+<ArchTransformer />
+
 ## 通俗类比
 
 想象你在读一本书，传统的 RNN 像逐字逐句地阅读，每次只能看到当前这个词和前面读过的内容。而 Transformer 像是把整页内容同时摊开在桌上，一眼就能看到所有句子，并且能用荧光笔快速标注出哪些词和哪个词关系最紧密——这种"同时看到所有词"的能力，让它在理解和生成文本时又快又准。

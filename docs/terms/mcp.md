@@ -12,6 +12,8 @@ difficulty: intermediate
 
 **MCP（Model Context Protocol）** 是由 Anthropic 提出的**开放协议**，统一了 AI 模型与外部工具、数据源之间的通信方式——相当于 AI 世界的「USB 接口」，让任何模型都能即插即用地连接各种工具和数据。
 
+<ArchMCP />
+
 ## 通俗类比
 
 想象一下 USB 出现之前的世界：每个外设都需要专用接口和驱动。**MCP** 就是 AI 领域的 USB 标准：
