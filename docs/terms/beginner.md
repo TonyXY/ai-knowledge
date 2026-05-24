@@ -1,7 +1,10 @@
 ---
 title: 入门术语
 description: AI 领域最基础的概念，零基础从这里开始
+difficulty: beginner
 ---
+
+<DifficultyBadge level="beginner" />
 
 # 🟢 入门术语
 

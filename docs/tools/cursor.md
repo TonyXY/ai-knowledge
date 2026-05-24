@@ -18,7 +18,7 @@ difficulty: intermediate
 |------|------|
 | 公司 | Anysphere |
 | 价格 | 免费版 / Pro $20/月 / Business $40/人/月 |
-| 支持模型 | GPT-4o / Claude 3.5 Sonnet / 自定义 API |
+| 支持模型 | GPT-5 / Claude 4 / Claude 3.5 Sonnet / 自定义 API |
 | 平台 | macOS / Windows / Linux |
 | 基于 | VS Code（开源分支） |
 
@@ -82,3 +82,7 @@ Cursor 会分析整个项目结构，自动将相关文件加入 AI 的上下文
 - [用 Cursor 搭建网页](/practices/cursor-website) —— 实战教程
 - [GitHub Copilot](/tools/copilot) —— 另一款主流 AI 编程工具对比
 - [Function Calling](/terms/function-calling)、[Agent](/terms/agent)
+
+---
+
+> 最后更新：2026.05

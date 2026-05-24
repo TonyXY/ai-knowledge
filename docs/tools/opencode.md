@@ -36,8 +36,8 @@ difficulty: intermediate
 
 ### 🧩 多模型接入
 不绑定特定模型，你可以接入：
-- OpenAI (GPT-4o / o1)
-- Anthropic (Claude 3.5 Sonnet)
+- OpenAI (GPT-5 / GPT-4o / o1)
+- Anthropic (Claude 4 / Claude 3.5 Sonnet)
 - DeepSeek
 - 本地模型 (Ollama / LM Studio)
 - 任何兼容 OpenAI API 格式的服务
@@ -110,3 +110,7 @@ providers:
 - [Cursor](/tools/cursor) —— 商业 AI IDE 对比
 - [GitHub Copilot](/tools/copilot) —— 最流行的 AI 编程插件对比
 - [DeepSeek](/tools/deepseek) —— 性价比最高的模型搭配
+
+---
+
+> 最后更新：2026.05

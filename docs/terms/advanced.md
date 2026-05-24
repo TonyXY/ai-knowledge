@@ -1,7 +1,10 @@
 ---
 title: 高级术语
 description: 深入模型底层的进阶概念
+difficulty: advanced
 ---
+
+<DifficultyBadge level="advanced" />
 
 # 🔴 高级术语
 

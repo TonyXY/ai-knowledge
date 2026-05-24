@@ -18,7 +18,7 @@ difficulty: beginner
 |------|------|
 | 公司 | Stability AI + 开源社区 |
 | 价格 | 免费（开源） |
-| 主要模型 | SDXL / SD 3 / SD 3.5 |
+| 主要模型 | SD 3.5 / SDXL / Flux |
 | 平台 | Windows / macOS / Linux |
 | 首发时间 | 2022 年 8 月 |
 
@@ -95,3 +95,7 @@ python main.py
 - [Midjourney](/tools/midjourney) —— 商业图像生成对比
 - [DALL·E](/tools/dalle) —— OpenAI 的图像生成方案
 - [什么是 Prompt](/prompts/what-is-prompt) —— 好的 Prompt 对图像生成至关重要
+
+---
+
+> 最后更新：2026.05

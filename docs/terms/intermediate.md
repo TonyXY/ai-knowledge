@@ -1,7 +1,10 @@
 ---
 title: 进阶术语
 description: 理解这些，你就超越了大多数 AI 使用者
+difficulty: intermediate
 ---
+
+<DifficultyBadge level="intermediate" />
 
 # 🟡 进阶术语
 

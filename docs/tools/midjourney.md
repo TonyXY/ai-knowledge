@@ -20,7 +20,7 @@ difficulty: beginner
 | 价格 | Basic $10/月 / Standard $30/月 / Pro $60/月 |
 | 平台 | Discord + 网页版 |
 | 首发时间 | 2022 年 7 月（公测） |
-| 特色 | 艺术风格极强、美学质感佳 |
+| 特色 | 艺术风格极强、美学质感佳、V7 模型画质飞跃 |
 
 ## 核心功能
 
@@ -52,7 +52,7 @@ difficulty: beginner
 - **艺术感最强**：画面的光影、构图、配色远超同类产品
 - **风格多样**：从超写实到抽象艺术都能驾驭
 - **社区强大**：Discord 社区里有海量 Prompt 和成果分享
-- **迭代迅速**：模型版本更新快，V6 到 V7 进步显著
+- **迭代迅速**：模型版本更新快，V7 画质和指令遵循能力显著提升
 
 ## 不足
 
@@ -86,3 +86,7 @@ difficulty: beginner
 - [DALL·E](/tools/dalle) —— OpenAI 的图像生成工具
 - [Stable Diffusion](/tools/stable-diffusion) —— 开源图像生成
 - [清晰的 Prompt 怎么写](/prompts/principles) —— 好的 Prompt 出好图
+
+---
+
+> 最后更新：2026.05

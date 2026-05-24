@@ -10,7 +10,7 @@ difficulty: beginner
 
 ## 一句话定位
 
-**长文本最强的 AI 助手**——200K 上下文窗口 + 深度推理能力，特别适合需要处理大量信息的复杂任务。
+**长文本最强的 AI 助手**——200K 上下文窗口 + 深度推理能力，Claude 4 代码能力全面领先，特别适合需要处理大量信息的复杂任务。
 
 ## 基本信息
 
@@ -18,7 +18,7 @@ difficulty: beginner
 |------|------|
 | 公司 | Anthropic |
 | 价格 | 免费版 / Pro $20/月 / Team $25/人/月 |
-| 主要模型 | Claude 3.5 Sonnet / Claude 3 Opus |
+| 主要模型 | Claude 4 / Claude 3.5 Sonnet / Claude 3.5 Haiku |
 | 上下文窗口 | 200K tokens |
 | 首发时间 | 2023 年 3 月 |
 
@@ -68,3 +68,7 @@ Claude 3.5 Sonnet 在代码生成和理解方面表现顶尖，尤其擅长：
 - [思维链 (CoT)](/terms/cot) —— Claude 的强项
 - [System Prompt 设计](/prompts/system-prompt) —— Claude 对系统提示词响应极好
 - [OpenAI API 入门](/dev/openai-api) — Anthropic API 调用方式类似
+
+---
+
+> 最后更新：2026.05

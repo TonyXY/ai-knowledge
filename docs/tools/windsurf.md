@@ -18,7 +18,7 @@ difficulty: intermediate
 |------|------|
 | 公司 | Codeium (Windsurf) |
 | 价格 | 免费版 / Pro $15/月 / Teams $35/人/月 |
-| 支持模型 | GPT-4o / Claude 3.5 Sonnet / 自有模型 |
+| 支持模型 | GPT-5 / Claude 4 / Claude 3.5 Sonnet / 自有模型 |
 | 平台 | macOS / Windows / Linux |
 | 基于 | VS Code |
 
@@ -78,3 +78,7 @@ Cascade 在执行任务时会保持"AI Flow"状态——它记得之前做了什
 - [Cursor](/tools/cursor) —— 对比另一款 AI IDE
 - [GitHub Copilot](/tools/copilot) —— 轻量级 AI 编程插件
 - [OpenCode](/tools/opencode) —— 开源替代方案
+
+---
+
+> 最后更新：2026.05

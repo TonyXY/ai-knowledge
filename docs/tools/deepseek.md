@@ -10,15 +10,15 @@ difficulty: beginner
 
 ## 一句话定位
 
-**国产最强开源模型**——性能媲美 GPT-4，价格却只有几十分之一，是预算敏感场景的最佳选择。
+**国产最强开源模型**——性能追平 GPT-5 级别，价格却只有几十分之一，是预算敏感场景的最佳选择。V4 为最新旗舰，V3 仍广泛使用。
 
 ## 基本信息
 
 | 项目 | 详情 |
 |------|------|
 | 公司 | 深度求索 (DeepSeek) |
-| 价格 | 免费 / API $0.27/M tokens（输入） |
-| 主要模型 | DeepSeek-V3 / DeepSeek-R1 |
+| 价格 | 免费 / API $0.27/M tokens（输入，V4） |
+| 主要模型 | DeepSeek-V4 / DeepSeek-V3 / DeepSeek-R1 |
 | 上下文窗口 | 128K tokens |
 | 首发时间 | 2023 年 |
 
@@ -76,3 +76,7 @@ API 价格极低：输入 $0.27/M tokens，输出 $1.10/M tokens。对比 GPT-4o
 - [LLM](/terms/llm)、[开源模型 vs 闭源模型](/terms/parameters)
 - [OpenAI API 入门](/dev/openai-api) — DeepSeek 兼容 OpenAI API 格式
 - [推理模型使用](/dev/reasoning-models) — DeepSeek-R1 的使用技巧
+
+---
+
+> 最后更新：2026.05

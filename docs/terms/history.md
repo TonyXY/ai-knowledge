@@ -1,6 +1,7 @@
 ---
 title: AI 发展历程
 description: 从 1956 到 2025，人工智能的发展脉络与关键里程碑
+difficulty: beginner
 ---
 
 # 📜 AI 发展历程

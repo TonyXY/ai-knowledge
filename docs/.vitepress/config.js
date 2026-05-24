@@ -70,13 +70,32 @@ export default defineConfig({
             { text: '思维链 (CoT)', link: '/terms/cot' },
             { text: 'RLHF', link: '/terms/rlhf' },
             { text: 'KV Cache', link: '/terms/kv-cache' },
+            { text: 'Prompt Caching', link: '/terms/prompt-caching' },
+            { text: 'DPO', link: '/terms/dpo' },
             { text: 'AI Skills', link: '/terms/ai-skills' },
             { text: 'MCP', link: '/terms/mcp' }
           ]
         }
       ],
 
+      '/roadmap/': [
+        {
+          text: '学习路线',
+          items: [
+            { text: '第 0 周：AI 发展历程', link: '/terms/history' },
+            { text: '第 1 周：AI 术语', link: '/terms/' },
+            { text: '第 2 周：提示词', link: '/prompts/' },
+            { text: '第 3 周：AI 工具', link: '/tools/' },
+            { text: '第 4 周：实操', link: '/practices/' },
+            { text: '第 5 周：AI 编程', link: '/dev/openai-api' },
+            { text: '第 6 周：工程化', link: '/dev/app-architecture' },
+            { text: '第 7 周：深入拓展', link: '/dev/multimodal-vision' }
+          ]
+        }
+      ],
+
       '/prompts/': [
+        { text: '📋 总览', link: '/prompts/' },
         {
           text: '基础篇',
           items: [
@@ -105,6 +124,7 @@ export default defineConfig({
       ],
 
       '/tools/': [
+        { text: '📋 总览', link: '/tools/' },
         {
           text: '📊 大模型对比',
           link: '/tools/model-comparison'
@@ -139,6 +159,7 @@ export default defineConfig({
       ],
 
       '/dev/': [
+        { text: '📋 总览', link: '/dev/' },
         {
           text: 'API 编程',
           items: [
@@ -166,7 +187,8 @@ export default defineConfig({
             { text: '模型评估与测试', link: '/dev/model-evaluation' },
             { text: 'AI 安全', link: '/dev/ai-security' },
             { text: '本地模型部署', link: '/dev/local-models' },
-            { text: 'RAG 深度实践', link: '/dev/rag-deep' }
+            { text: 'RAG 深度实践', link: '/dev/rag-deep' },
+            { text: 'LLM 可观测性', link: '/dev/observability' }
           ]
         },
         {
@@ -178,6 +200,7 @@ export default defineConfig({
       ],
 
       '/practices/': [
+        { text: '📋 总览', link: '/practices/' },
         {
           text: '新手教程',
           items: [

@@ -18,7 +18,7 @@ difficulty: intermediate
 |------|------|
 | 公司 | GitHub (Microsoft) |
 | 价格 | 免费版 / Individual $10/月 / Business $19/人/月 |
-| 支持模型 | GPT-4o / Claude 3.5 Sonnet / o1 等 |
+| 支持模型 | GPT-5 / Claude 4 / GPT-4o / o1 等 |
 | 平台 | VS Code / JetBrains / Visual Studio / Neovim 等 |
 | 首发时间 | 2021 年 6 月 |
 
@@ -85,3 +85,7 @@ Copilot 最经典的功能。在你敲代码时，它会：
 - [Cursor](/tools/cursor) —— AI IDE 版本，AI 体验更深
 - [Windsurf](/tools/windsurf) —— 另一款 AI IDE
 - [OpenCode](/tools/opencode) —— 开源替代方案
+
+---
+
+> 最后更新：2026.05

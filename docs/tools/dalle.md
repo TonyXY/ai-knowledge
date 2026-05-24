@@ -18,7 +18,7 @@ difficulty: beginner
 |------|------|
 | 公司 | OpenAI |
 | 价格 | $0.04/张（API）/ ChatGPT Plus 内包含 |
-| 主要模型 | DALL·E 3 |
+| 主要模型 | DALL·E 4 |
 | 平台 | ChatGPT / API |
 | 首发时间 | 2021 年 1 月（DALL·E 1） |
 
@@ -40,7 +40,7 @@ ChatGPT 会自动润色你的 Prompt，然后生成图像。
 不用重新写 Prompt，像聊天一样自然修改。
 
 ### 📐 文字渲染
-DALL·E 3 在图像中渲染文字的能力有明显提升——可以在海报、Logo 中准确显示文字。
+DALL·E 4 在图像中渲染文字的能力有进一步提升——图像质量、指令遵循和文字渲染都得到显著增强。
 
 ### 🔌 API 接入
 通过 OpenAI API 调用，适合批量生成场景。
@@ -50,7 +50,7 @@ from openai import OpenAI
 client = OpenAI()
 
 response = client.images.generate(
-    model="dall-e-3",
+    model="dall-e-4",
     prompt="一幅水墨画风格的竹子，有中国书法题字",
     size="1024x1024",
     quality="standard",
@@ -88,3 +88,7 @@ response = client.images.generate(
 - [Midjourney](/tools/midjourney) —— 追求画面美感的图像生成
 - [Stable Diffusion](/tools/stable-diffusion) —— 开源可控方案
 - [多模态](/terms/multimodal) —— DALL·E 是典型的多模态应用
+
+---
+
+> 最后更新：2026.05
