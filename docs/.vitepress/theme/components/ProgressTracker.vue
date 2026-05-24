@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useData } from 'vitepress'
 
 const { page, site } = useData()
@@ -108,18 +108,28 @@ function updateStats(data) {
   visitedCount.value = visited.size
 }
 
-onMounted(() => {
-  show.value = true
+// 记录当前页面访问
+function trackPage(path) {
   const data = loadProgress()
-  const currentPath = page.value.relativePath.replace(/\.md$/, '')
-  const match = getModuleForPath(currentPath)
+  const cleanPath = path.replace(/\.md$/, '')
+  const match = getModuleForPath(cleanPath)
 
   if (match && !data.visited.includes(`${match.mod}/${match.slug}`)) {
     data.visited.push(`${match.mod}/${match.slug}`)
     saveProgress(data)
   }
-
   updateStats(data)
+}
+
+// 初始化显示
+onMounted(() => {
+  show.value = true
+  trackPage(page.value.relativePath)
+})
+
+// 页面切换时自动追踪
+watch(() => page.value.relativePath, (newPath) => {
+  trackPage(newPath)
 })
 </script>
 
