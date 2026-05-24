@@ -276,6 +276,9 @@ export default defineConfig({
       ],
     },
 
+    // 目录导航（右侧悬浮，显示二级到四级标题）
+    outline: [2, 4],
+
     // 页脚
     footer: {
       message: '系统学习 AI，循序渐进',
