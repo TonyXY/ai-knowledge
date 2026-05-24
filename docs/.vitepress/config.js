@@ -73,7 +73,8 @@ export default defineConfig({
             { text: 'Prompt Caching', link: '/terms/prompt-caching' },
             { text: 'DPO', link: '/terms/dpo' },
             { text: 'AI Skills', link: '/terms/ai-skills' },
-            { text: 'MCP', link: '/terms/mcp' }
+            { text: 'MCP', link: '/terms/mcp' },
+            { text: 'AI 伦理与法规', link: '/terms/ai-ethics' }
           ]
         }
       ],
@@ -154,6 +155,21 @@ export default defineConfig({
             { text: 'Midjourney', link: '/tools/midjourney' },
             { text: 'DALL·E', link: '/tools/dalle' },
             { text: 'Stable Diffusion', link: '/tools/stable-diffusion' }
+          ]
+        },
+        {
+          text: '视频与音频',
+          items: [
+            { text: 'Sora', link: '/tools/sora' },
+            { text: 'Runway', link: '/tools/runway' },
+            { text: 'ElevenLabs', link: '/tools/elevenlabs' },
+            { text: 'Suno', link: '/tools/suno' }
+          ]
+        },
+        {
+          text: '搜索工具',
+          items: [
+            { text: 'Perplexity', link: '/tools/perplexity' }
           ]
         }
       ],

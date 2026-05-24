@@ -15,7 +15,7 @@ description: 系统掌握 AI 核心概念，从入门到高级
 
 ---
 
-## 🟢 入门术语（12 个）
+## 🟢 入门术语（10 个）
 
 这些是 AI 领域最基础的概念，**零基础从这里开始**。
 
@@ -55,6 +55,10 @@ description: 系统掌握 AI 核心概念，从入门到高级
   <a href="./fine-tuning" class="card">
     <h3>微调 (Fine-tuning)</h3>
     <p>让通用模型适应特定任务的技术</p>
+  </a>
+  <a href="./ai-ethics" class="card">
+    <h3>AI 伦理与法规</h3>
+    <p>偏见、隐私、版权、全球法规——负责任的 AI</p>
   </a>
 </div>
 
@@ -101,11 +105,15 @@ description: 系统掌握 AI 核心概念，从入门到高级
     <h3>MCP</h3>
     <p>AI 与外部工具/数据源交互的开放协议</p>
   </a>
+  <a href="./prompt-caching" class="card">
+    <h3>Prompt Caching</h3>
+    <p>缓存重复 Prompt 片段，降低成本和延迟</p>
+  </a>
 </div>
 
 ---
 
-## 🔴 高级术语（4 个）
+## 🔴 高级术语（5 个）
 
 深入模型底层的进阶概念。
 
@@ -125,5 +133,9 @@ description: 系统掌握 AI 核心概念，从入门到高级
   <a href="./kv-cache" class="card">
     <h3>KV Cache</h3>
     <p>加速推理的关键优化技术</p>
+  </a>
+  <a href="./dpo" class="card">
+    <h3>DPO</h3>
+    <p>无需奖励模型的偏好对齐方案，RLHF 的简化替代</p>
   </a>
 </div>
