@@ -111,4 +111,4 @@ difficulty: advanced
 
 - [用 Cursor 搭建网页](/practices/cursor-website) —— 了解 Cursor 的基本用法（但挑战中不要照抄步骤）
 - [用 ChatGPT 辅助编程](/practices/chatgpt-coding) —— 学会高效向 AI 提问和 Debug
-- [大模型对比：选哪个 AI 帮你编程](/tools/models-comparison) —— 不同 AI 在编程任务上的优劣势
+- [大模型对比：选哪个 AI 帮你编程](/tools/model-comparison) —— 不同 AI 在编程任务上的优劣势
