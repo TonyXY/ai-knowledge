@@ -9,30 +9,47 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 
 const time = ref(0)
-const WPM = 300 // 中文阅读速度：300 字/分钟
+const WPM = 300
 
-onMounted(() => {
-  // 等待 DOM 渲染完成
-  setTimeout(() => {
-    const content = document.querySelector('.vp-doc')
-    if (!content) return
+function calc() {
+  const el = document.querySelector('.vp-doc')
+  if (!el) return
 
-    // 排除代码块、表格、代码行号等非正文元素
-    const clone = content.cloneNode(true)
-    clone.querySelectorAll('pre, code, .line-numbers, .copy, .header-anchor').forEach(el => el.remove())
-    
-    const text = (clone.textContent || '').trim()
-    // 计中文字符（一个汉字算一字）和其他单词
-    const chineseChars = (text.match(/[\u4e00-\u9fff]/g) || []).length
-    const otherWords = text.replace(/[\u4e00-\u9fff]/g, '').split(/\s+/).filter(Boolean).length
-    const totalWords = chineseChars + otherWords * 0.5 // 英文单词半个算
-    
-    const minutes = Math.ceil(totalWords / WPM)
-    time.value = Math.max(1, minutes)
-  }, 100)
+  // 获取当前页面 URL 路径作为缓存 key，确保不同页面的计算不会互相干扰
+  const path = location.pathname
+  if (el.dataset.readingDone === path) return // 已计算过
+  el.dataset.readingDone = path
+
+  const text = (el.textContent || '').trim()
+  if (text.length < 50) return // 页面太短不计
+
+  // 精确统计：中文字符 + 英文单词
+  const chinese = (text.match(/[\u4e00-\u9fff\u3400-\u4dbf]/g) || []).length
+  const english = text.replace(/[\u4e00-\u9fff\u3400-\u4dbf]/g, ' ')
+                       .split(/[\s,;.!?()\[\]{}'"\n\r]+/)
+                       .filter(w => w.length > 0).length
+  const total = chinese + english
+  const minutes = Math.max(1, Math.ceil(total / WPM))
+  time.value = minutes
+}
+
+onMounted(async () => {
+  await nextTick()
+  // 尝试立即计算
+  calc()
+  // SSR 内容延迟加载时兜底
+  if (time.value === 0) {
+    const observer = new MutationObserver(() => {
+      calc()
+      if (time.value > 0) observer.disconnect()
+    })
+    observer.observe(document.body, { childList: true, subtree: true })
+    // 最多等 3 秒
+    setTimeout(() => observer.disconnect(), 3000)
+  }
 })
 </script>
 
