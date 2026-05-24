@@ -235,7 +235,10 @@ export default defineConfig({
           items: [
             { text: '用 ChatGPT 辅助编程', link: '/practices/chatgpt-coding' },
             { text: '用 Cursor 搭建网页', link: '/practices/cursor-website' },
-            { text: '用 Claude 分析文档', link: '/practices/claude-analysis' }
+            { text: '用 Claude 分析文档', link: '/practices/claude-analysis' },
+            { text: '用 AI 做翻译', link: '/practices/ai-translation' },
+            { text: '用 AI 做 PPT', link: '/practices/ai-ppt' },
+            { text: '用 AI 做数据整理', link: '/practices/ai-data-analysis' }
           ]
         },
         {
@@ -245,19 +248,14 @@ export default defineConfig({
             { text: '构建 AI 聊天机器人', link: '/practices/ai-chatbot' },
             { text: 'Prompt 批量生成', link: '/practices/prompt-batch' }
           ]
+        },
+        {
+          text: '🏆 挑战',
+          items: [
+            { text: '用 AI 搭建个人网站', link: '/practices/challenge-01' }
+          ]
         }
-      ]
-    },
-
-    // 内置搜索
-    search: {
-      provider: 'local'
-    },
-
-    // 社交链接
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/TonyXY/ai-knowledge' }
-    ],
+      ],
 
     // 页脚
     footer: {
