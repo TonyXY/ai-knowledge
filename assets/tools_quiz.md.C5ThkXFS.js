@@ -1,0 +1,22 @@
+import{_ as r,O as a,H as t,f as n,k as i,i as s}from"./chunks/framework.Pt2pSV98.js";const q=JSON.parse('{"title":"AI 工具知识测验","description":"测测你对主流 AI 工具的了解程度——模型上下文窗口、IDE 对比、AI 搜索、开源模型","frontmatter":{"title":"AI 工具知识测验","description":"测测你对主流 AI 工具的了解程度——模型上下文窗口、IDE 对比、AI 搜索、开源模型","difficulty":"beginner"},"headers":[],"relativePath":"tools/quiz.md","filePath":"tools/quiz.md"}'),l={name:"tools/quiz.md"};function d(p,e,u,h,c,m){const o=a("DifficultyBadge");return t(),n("div",null,[i(o,{level:"beginner"}),e[0]||(e[0]=s(`<h1 id="ai-工具知识测验" tabindex="-1">AI 工具知识测验 <a class="header-anchor" href="#ai-工具知识测验" aria-label="Permalink to &quot;AI 工具知识测验&quot;">​</a></h1><p>检验你对 AI 工具的认知水平。每题点击&quot;查看答案&quot;查看解析。</p><hr><h2 id="选择题" tabindex="-1">选择题 <a class="header-anchor" href="#选择题" aria-label="Permalink to &quot;选择题&quot;">​</a></h2><h3 id="q1-以下哪个模型的上下文窗口最大" tabindex="-1">Q1：以下哪个模型的上下文窗口最大？ <a class="header-anchor" href="#q1-以下哪个模型的上下文窗口最大" aria-label="Permalink to &quot;Q1：以下哪个模型的上下文窗口最大？&quot;">​</a></h3><pre><code>A. GPT-4o（128K）
+
+B. Claude 3.5 Sonnet（200K）
+
+C. Gemini 2.0 Pro（2M）
+
+D. DeepSeek-V3（128K）
+</code></pre><details><summary>查看答案</summary><p><strong>正确答案：C</strong></p><p>Gemini 2.0 Pro 的上下文窗口为 <strong>2M tokens</strong>，远超其他选项：</p><ul><li>GPT-4o：128K</li><li>Claude 3.5 Sonnet：200K</li><li>DeepSeek-V3：128K</li></ul><p>2M 的上下文窗口意味着你可以一次性输入约 <strong>150 万英文单词</strong>，相当于几本小说的体量，在处理超长文档、大型代码库等场景时优势巨大。</p></details><h3 id="q2-cursor-和-vs-code-的关系是" tabindex="-1">Q2：Cursor 和 VS Code 的关系是？ <a class="header-anchor" href="#q2-cursor-和-vs-code-的关系是" aria-label="Permalink to &quot;Q2：Cursor 和 VS Code 的关系是？&quot;">​</a></h3><pre><code>A. Cursor 是 VS Code 的插件
+
+B. Cursor 是基于 VS Code 的独立 IDE
+
+C. Cursor 和 VS Code 无关
+
+D. Cursor 是 VS Code 的替代品且不兼容
+</code></pre><details><summary>查看答案</summary><p><strong>正确答案：B</strong></p><p>Cursor 是基于 VS Code 开源内核（Code - OSS）构建的独立 IDE，因此：</p><ul><li>✅ 继承了 VS Code 的所有功能（扩展生态、快捷键、界面布局）</li><li>✅ 可以无缝迁移 VS Code 的配置和插件</li><li>✅ 叠加了深度 AI 集成（Tab 补全、Composer、Chat、Agent）</li></ul><p>它不是插件，不需要先装 VS Code，而是一个<strong>独立的应用程序</strong>。</p></details><h3 id="q3-perplexity-相比普通搜索引擎的核心优势是" tabindex="-1">Q3：Perplexity 相比普通搜索引擎的核心优势是？ <a class="header-anchor" href="#q3-perplexity-相比普通搜索引擎的核心优势是" aria-label="Permalink to &quot;Q3：Perplexity 相比普通搜索引擎的核心优势是？&quot;">​</a></h3><pre><code>A. 搜索速度更快
+
+B. 用 AI 总结搜索结果并标注来源
+
+C. 完全免费
+
+D. 只搜索学术论文
+</code></pre><details><summary>查看答案</summary><p><strong>正确答案：B</strong></p><p>Perplexity 的核心创新在于**「AI 搜索引擎」**：</p><ol><li>它对搜索结果进行 AI 摘要和整合，用自然语言回答你的问题</li><li>每个回答都会<strong>标注信息来源</strong>，方便你验证和深入阅读</li><li>支持追问和深入探索，像对话一样持续检索</li></ol><p>相比之下，传统搜索引擎只返回链接列表，需要你自己点开、阅读、总结。</p></details><hr><h2 id="判断题" tabindex="-1">判断题 <a class="header-anchor" href="#判断题" aria-label="Permalink to &quot;判断题&quot;">​</a></h2><h3 id="q4-deepseek-v3-是完全开源的大模型。" tabindex="-1">Q4：DeepSeek-V3 是完全开源的大模型。 <a class="header-anchor" href="#q4-deepseek-v3-是完全开源的大模型。" aria-label="Permalink to &quot;Q4：DeepSeek-V3 是完全开源的大模型。&quot;">​</a></h3><details><summary>查看答案</summary><p><strong>✅ 正确</strong></p><p>DeepSeek-V3 确实是完全开源的模型。DeepSeek 团队公开了模型权重和技术报告，开发者可以自由下载、部署、商用。这是国产大模型中开源程度最高的之一，在开源社区（如 HuggingFace）中广受欢迎。</p></details><h3 id="q5-midjourney-是-openai-旗下的产品。" tabindex="-1">Q5：Midjourney 是 OpenAI 旗下的产品。 <a class="header-anchor" href="#q5-midjourney-是-openai-旗下的产品。" aria-label="Permalink to &quot;Q5：Midjourney 是 OpenAI 旗下的产品。&quot;">​</a></h3><details><summary>查看答案</summary><p><strong>❌ 错误</strong></p><p>Midjourney 是一家<strong>独立公司</strong>，由 David Holz 创立，与 OpenAI 没有隶属关系。</p><p>快速辨别：</p><ul><li><strong>Midjourney</strong>：独立公司，专注 AI 图像生成，以艺术风格和美学质量著称</li><li><strong>DALL·E</strong>：这才是 OpenAI 旗下的图像生成产品</li><li><strong>Stable Diffusion</strong>：Stability AI 的产品，完全开源</li></ul><p>三者是 <strong>AI 图像生成领域的三巨头</strong>，彼此是竞争关系，而非同一公司。</p></details><hr><p>→ 🛠️ <a href="/ai-knowledge/tools/">返回 AI 工具总览</a></p>`,21))])}const A=r(l,[["render",d]]);export{q as __pageData,A as default};
