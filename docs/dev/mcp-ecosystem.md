@@ -118,34 +118,34 @@ difficulty: intermediate
 
 ## AI Skills（Agent 技能）
 
-Skills 是赋予 Agent 特定领域能力的模块化配置，目前主要分布在几个生态中：
+Skills 是赋予 Agent 特定领域能力的模块化配置，分为三大生态。
 
 ### Claude Code Skills
 
-| Skill | 作用 |
-|-------|------|
-| **Project Context** | 为项目注入架构文档、编码规范 |
-| **Code Review** | 自动代码审查规则 |
-| **Test Generation** | 测试生成策略 |
-| **Documentation** | 文档编写规范 |
+| Skill | 推荐理由 | 使用方法 |
+|-------|---------|---------|
+| **Project Context** | 让 Claude 理解项目结构和规范，回答更精准 | 在项目根目录创建 `CLAUDE.md` 或 `.claude/` 文件夹，写入架构说明和编码规范 |
+| **Code Review** | 自动化 Code Review 规则，减少人工审核时间 | 在 `.claude/rules/` 下添加 `.md` 文件，定义 Review 标准和检查清单 |
+| **Test Generation** | 统一测试风格，自动生成符合规范的测试用例 | 在 `CLAUDE.md` 中指定测试框架、Mock 策略、覆盖率目标 |
+| **Documentation** | 保持文档与代码同步，减少文档债务 | 配置文档模板和生成规则，每次提交时自动建议更新关联文档 |
 
 ### Cursor / Windsurf Rules
 
-| Skill | 作用 |
-|-------|------|
-| **Framework Rules** | React/Vue/Next.js 编码规范 |
-| **Style Rules** | Tailwind/CSS-in-JS 风格指南 |
-| **Architecture Rules** | 项目架构约定 |
-| **Testing Rules** | 测试框架配置 |
+| Skill | 推荐理由 | 使用方法 |
+|-------|---------|---------|
+| **Framework Rules** | 确保 AI 生成的代码框架一致，减少重构 | 在 `.cursorrules` 或 `.windsurfrules` 中写明框架版本、目录结构、命名约定 |
+| **Style Rules** | 让 AI 输出自动匹配项目风格，无需手动调整 | 在规则文件中指定 CSS 方案、组件库、代码风格（如 "使用 Tailwind 而非 CSS Modules"） |
+| **Architecture Rules** | 防止 AI 写出不符合架构设计的代码 | 描述项目的分层结构（如 "API 层 → Service 层 → Repository 层"），设定边界 |
+| **Testing Rules** | 保证每次生成的代码都有对应测试 | 配置测试文件命名规范、Mock 策略和覆盖率要求 |
 
 ### OpenCode Skills
 
-| Skill | 作用 |
-|-------|------|
-| **Agent Workflow** | 定义 Agent 的工作流程 |
-| **Tool Config** | 配置 Agent 可用的工具集 |
-| **Memory Instructions** | Agent 记忆行为设置 |
-| **Safety Rules** | 安全边界和约束 |
+| Skill | 推荐理由 | 使用方法 |
+|-------|---------|---------|
+| **Agent Workflow** | 定义 Agent 如何处理复杂任务 | 编写 `.clinerules` 文件，描述任务拆解步骤和决策流程 |
+| **Tool Config** | 限制 Agent 可用工具范围，防止误操作 | 在配置文件中声明 Agent 可调用的命令和 API，白名单机制 |
+| **Memory Instructions** | 控制 Agent 如何记忆和引用历史信息 | 设置记忆持久化策略（文件/数据库/向量库），定义记忆回收规则 |
+| **Safety Rules** | 关键安全边界，防止破坏性操作 | 限制文件写入范围、禁止执行的命令、需要人工确认的操作列表 |
 
 ---
 
