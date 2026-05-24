@@ -140,7 +140,7 @@ ai-knowledge/
 - [x] 补充进阶/高级术语（DPO、Prompt Caching、AI 伦理法规）
 - [ ] 补充 LoRA、Temperature、Prompt Injection（概念层面）
 - [x] 为 25 个术语添加「快速记忆口诀」
-- [ ] 术语关联图可视化
+- [x] 术语关联图可视化（SVG 知识图谱组件）
 
 #### 提示词模块
 - [x] 场景模板（写作、编程、分析、翻译、学习、角色扮演）
