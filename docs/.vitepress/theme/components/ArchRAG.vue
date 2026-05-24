@@ -1,91 +1,103 @@
 <template>
   <div class="arch-wrap">
     <svg :viewBox="`0 0 ${w} ${h}`" class="arch-svg">
-      <rect x="0" y="0" :width="w" :height="h" rx="12" fill="#f8fafc"/>
+
+      <!-- ============ 在线流程（上半部分） ============ -->
+      <text x="20" y="25" font-size="12" font-weight="700" fill="#1e293b">在线检索流程</text>
 
       <!-- 1. 用户提问 -->
-      <g transform="translate(40,20)">
-        <rect x="-50" y="0" width="100" height="32" rx="16" fill="#6366f1"/>
-        <text x="0" y="21" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">用户提问</text>
-        <line x1="50" y1="16" x2="110" y2="16" stroke="#6366f1" stroke-width="1.5"/>
-        <polygon points="108,11 118,16 108,21" fill="#6366f1"/>
+      <g transform="translate(120,35)">
+        <rect x="-55" y="0" width="110" height="32" rx="16" fill="#6366f1"/>
+        <text x="0" y="21" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">🙋 用户提问</text>
       </g>
 
-      <!-- 2. Embedding -->
-      <g transform="translate(200,10)">
-        <rect x="-40" y="0" width="80" height="28" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.2"/>
-        <text x="0" y="19" text-anchor="middle" font-size="10" fill="#4338ca" font-weight="600">Embedding</text>
-        <line x1="40" y1="14" x2="80" y2="14" stroke="#6366f1" stroke-width="1.5"/>
-        <polygon points="78,9 88,14 78,19" fill="#6366f1"/>
+      <!-- 箭头向下 -->
+      <line x1="120" y1="67" x2="120" y2="90" stroke="#6366f1" stroke-width="1.5"/>
+      <polygon points="115,88 120,98 125,88" fill="#6366f1"/>
+
+      <!-- 2. 向量化 -->
+      <g transform="translate(30,100)">
+        <rect x="0" y="0" width="180" height="36" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.2"/>
+        <text x="90" y="23" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">① 向量化 Embedding</text>
       </g>
 
-      <!-- 3. 向量检索 -->
-      <g transform="translate(330,5)">
-        <rect x="-45" y="0" width="90" height="28" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.2"/>
-        <text x="0" y="19" text-anchor="middle" font-size="10" fill="#854d0e" font-weight="600">向量检索</text>
-        <line x1="-45" y1="14" x2="-88" y2="14" stroke="#eab308" stroke-width="1.5"/>
-        <polygon points="-90,9 -98,14 -90,19" fill="#eab308"/>
-        <!-- 向量数据库图标 -->
-        <rect x="-35" y="35" width="70" height="40" rx="6" fill="#fef9c3" stroke="#eab308" stroke-width="1"/>
-        <text x="0" y="49" text-anchor="middle" font-size="9" fill="#854d0e">向量数据库</text>
-        <text x="0" y="63" text-anchor="middle" font-size="8" fill="#a16207">Top-K 文档</text>
+      <!-- 横线分割 -->
+      <line x1="120" y1="136" x2="120" y2="150" stroke="#cbd5e1" stroke-width="1"/>
+
+      <!-- 3. 向量检索 + 向量数据库 -->
+      <g transform="translate(30,152)">
+        <rect x="0" y="0" width="180" height="36" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.2"/>
+        <text x="90" y="23" text-anchor="middle" font-size="11" fill="#854d0e" font-weight="600">② 向量检索 Top-K</text>
       </g>
 
-      <!-- Top-K 回来 -->
-      <line x1="375" y1="45" x2="375" y2="90" stroke="#eab308" stroke-width="1.5"/>
-      <line x1="375" y1="90" x2="200" y2="90" stroke="#eab308" stroke-width="1.5"/>
-      <line x1="200" y1="90" x2="200" y2="68" stroke="#eab308" stroke-width="1.5"/>
-      <polygon points="195,70 200,60 205,70" fill="#eab308"/>
+      <g transform="translate(250,148)">
+        <rect x="0" y="0" width="130" height="44" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.2"/>
+        <text x="65" y="18" text-anchor="middle" font-size="10" fill="#854d0e" font-weight="600">向量数据库</text>
+        <text x="65" y="33" text-anchor="middle" font-size="9" fill="#a16207">存储文档向量</text>
+      </g>
+
+      <!-- 箭头：向量检索 ←→ 向量库 -->
+      <line x1="210" y1="170" x2="250" y2="170" stroke="#eab308" stroke-width="1.5"/>
+      <polygon points="208,165 218,170 208,175" fill="#eab308"/>
+      <polygon points="248,165 238,170 248,175" fill="#eab308"/>
+
+      <!-- Top-K 结果往回 -->
+      <line x1="120" y1="188" x2="120" y2="202" stroke="#eab308" stroke-width="1.5"/>
+      <polygon points="115,200 120,210 125,200" fill="#eab308"/>
 
       <!-- 4. 拼接上下文 -->
-      <g transform="translate(100,70)">
+      <g transform="translate(30,212)">
         <rect x="0" y="0" width="200" height="36" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.2"/>
-        <text x="100" y="23" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">拼接上下文：问题 + 检索结果</text>
+        <text x="100" y="23" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">③ 拼接：问题 + 检索文档</text>
       </g>
 
-      <!-- 箭头到 LLM -->
-      <line x1="200" y1="106" x2="200" y2="130" stroke="#6366f1" stroke-width="1.5"/>
-      <polygon points="195,128 200,138 205,128" fill="#6366f1"/>
+      <line x1="130" y1="248" x2="130" y2="262" stroke="#6366f1" stroke-width="1.5"/>
+      <polygon points="125,260 130,270 135,260" fill="#6366f1"/>
 
-      <!-- 5. LLM 生成 -->
-      <g transform="translate(100,138)">
+      <!-- 5. LLM -->
+      <g transform="translate(30,270)">
         <rect x="0" y="0" width="200" height="36" rx="10" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
-        <text x="100" y="23" text-anchor="middle" font-size="12" fill="#7e22ce" font-weight="700">🤖 大语言模型 LLM</text>
+        <text x="100" y="23" text-anchor="middle" font-size="12" fill="#7e22ce" font-weight="700">🤖 ④ LLM 生成回答</text>
       </g>
 
-      <!-- 箭头到输出 -->
-      <line x1="200" y1="174" x2="200" y2="198" stroke="#a855f7" stroke-width="1.5"/>
-      <polygon points="195,196 200,206 205,196" fill="#a855f7"/>
+      <line x1="130" y1="306" x2="130" y2="316" stroke="#10b981" stroke-width="1.5"/>
+      <polygon points="125,314 130,324 135,314" fill="#10b981"/>
 
-      <!-- 6. 最终回答 -->
-      <g transform="translate(40,204)">
-        <rect x="-50" y="0" width="100" height="32" rx="16" fill="#10b981"/>
-        <text x="0" y="21" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">✅ 最终回答</text>
+      <!-- 6. 回答 -->
+      <g transform="translate(120,326)">
+        <rect x="-55" y="0" width="110" height="30" rx="15" fill="#10b981"/>
+        <text x="0" y="20" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">✅ 最终回答</text>
       </g>
 
-      <!-- 底部：索引流程 -->
-      <g transform="translate(40,260)">
-        <text x="0" y="0" font-size="11" font-weight="600" fill="#1e293b">离线索引流程</text>
-        <line x1="0" y1="10" x2="0" y2="20" stroke="#94a3b8" stroke-width="1"/>
-        <rect x="-40" y="22" width="80" height="24" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-        <text x="0" y="38" text-anchor="middle" font-size="9" fill="#475569">文档分块</text>
-        <line x1="40" y1="34" x2="80" y2="34" stroke="#94a3b8" stroke-width="1.5"/>
-        <polygon points="78,29 88,34 78,39" fill="#94a3b8"/>
-        <rect x="88" y="22" width="80" height="24" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-        <text x="128" y="38" text-anchor="middle" font-size="9" fill="#475569">Embedding 编码</text>
-        <line x1="168" y1="34" x2="200" y2="34" stroke="#94a3b8" stroke-width="1.5"/>
-        <polygon points="198,29 208,34 198,39" fill="#94a3b8"/>
-        <rect x="208" y="22" width="80" height="24" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-        <text x="248" y="38" text-anchor="middle" font-size="9" fill="#475569">存入向量库</text>
+      <!-- ============ 离线索引（虚线框） ============ -->
+      <rect x="280" y="240" width="180" height="120" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="370" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">离线索引流程</text>
+
+      <g transform="translate(290,268)">
+        <rect x="0" y="0" width="160" height="22" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="80" y="15" text-anchor="middle" font-size="9" fill="#475569">文档分块 (Chunking)</text>
+        <line x1="80" y1="22" x2="80" y2="27" stroke="#94a3b8" stroke-width="1"/>
+        <polygon points="77,27 80,32 83,27" fill="#94a3b8"/>
+        <rect x="0" y="32" width="160" height="22" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="80" y="47" text-anchor="middle" font-size="9" fill="#475569">Embedding 编码</text>
+        <line x1="80" y1="54" x2="80" y2="59" stroke="#94a3b8" stroke-width="1"/>
+        <polygon points="77,59 80,64 83,59" fill="#94a3b8"/>
+        <rect x="0" y="64" width="160" height="22" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="80" y="79" text-anchor="middle" font-size="9" fill="#475569">存入向量数据库</text>
       </g>
 
-      <text x="250" y="310" text-anchor="middle" font-size="11" fill="#94a3b8">先把文档向量化存入数据库，用户提问时检索最相关的内容拼给 LLM</text>
+      <!-- 离线→在线 入库箭头 -->
+      <line x1="310" y1="270" x2="270" y2="192" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>
+      <line x1="270" y1="192" x2="250" y2="192" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>
+      <polygon points="252,188 242,192 252,196" fill="#94a3b8"/>
+
+      <text x="370" y="380" text-anchor="middle" font-size="11" fill="#94a3b8">文档先离线索引，用户提问时在线检索——用数据对抗幻觉</text>
     </svg>
   </div>
 </template>
 
 <script setup>
-const w = 500, h = 330
+const w = 500, h = 398
 </script>
 
 <style scoped>
