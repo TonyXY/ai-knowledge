@@ -15,15 +15,10 @@ difficulty: beginner
 ## 一、选择题
 
 ### Q1：System Prompt 的主要作用是什么？
-
     A. 控制模型输出的字数
-
     B. 设定模型的行为、角色和规则
-
     C. 决定模型使用什么语言
-
     D. 设置模型的运行温度
-
 <details>
 <summary>查看答案</summary>
 
@@ -37,15 +32,10 @@ System Prompt 用于在对话开始前定义模型的整体行为——你是谁
 ---
 
 ### Q2：Few-Shot 提示是什么意思？
-
     A. 只用一个词提问
-
     B. 给模型 2-3 个示例后再提问
-
     C. 让模型自己举例子
-
     D. 限制模型的输出长度
-
 <details>
 <summary>查看答案</summary>
 
@@ -59,15 +49,10 @@ Few-Shot 提示是在提问前给模型展示几个示例（通常 2-5 个），
 ---
 
 ### Q3：思维链（CoT）最适合什么场景？
-
     A. 简单问答
-
     B. 数学推理和逻辑分析
-
     C. 文本翻译
-
     D. 内容摘要
-
 <details>
 <summary>查看答案</summary>
 
@@ -81,15 +66,10 @@ Few-Shot 提示是在提问前给模型展示几个示例（通常 2-5 个），
 ---
 
 ### Q4：JSON Mode 的主要用途是？
-
     A. 让模型输出更快的 JSON 格式
-
     B. 强制模型输出可解析的 JSON
-
     C. 把模型内部状态转为 JSON
-
     D. 优化模型的 JSON 训练数据
-
 <details>
 <summary>查看答案</summary>
 
