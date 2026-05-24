@@ -12,7 +12,63 @@ difficulty: intermediate
 
 Transformer 是 2017 年 Google 在论文《Attention Is All You Need》中提出的神经网络架构，用**自注意力机制**替代了传统的循环结构，让模型可以并行处理整个序列，成为 GPT、BERT、Claude 等所有现代大语言模型的基石。
 
-<ArchTransformer />
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:16px;margin:16px 0;overflow-x:auto;text-align:center">
+  <svg viewBox="0 0 620 340" style="max-width:620px;width:100%">
+    <!-- Encoder -->
+    <rect x="60" y="15" width="160" height="290" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="140" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#4338ca">编码器 Encoder ×6</text>
+    <!-- Self-Attention -->
+    <rect x="80" y="55" width="120" height="32" rx="6" fill="#6366f1" opacity="0.12"/>
+    <text x="140" y="75" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">多头自注意力</text>
+    <rect x="85" y="91" width="110" height="18" rx="4" fill="#fff" stroke="#cbd5e1"/>
+    <text x="140" y="104" text-anchor="middle" font-size="9" fill="#64748b">Add &amp; Norm</text>
+    <line x1="140" y1="109" x2="140" y2="115" stroke="#cbd5e1"/>
+    <!-- FFN -->
+    <rect x="80" y="115" width="120" height="32" rx="6" fill="#6366f1" opacity="0.12"/>
+    <text x="140" y="135" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">前馈网络 FFN</text>
+    <rect x="85" y="151" width="110" height="18" rx="4" fill="#fff" stroke="#cbd5e1"/>
+    <text x="140" y="164" text-anchor="middle" font-size="9" fill="#64748b">Add &amp; Norm</text>
+    <!-- Input -->
+    <rect x="100" y="190" width="80" height="28" rx="6" fill="#6366f1"/>
+    <text x="140" y="209" text-anchor="middle" font-size="11" fill="#fff" font-weight="600">输入</text>
+    <polygon points="136,190 140,182 144,190" fill="#6366f1"/>
+    <text x="140" y="248" text-anchor="middle" font-size="10" fill="#94a3b8">词嵌入 + 位置编码</text>
+    <text x="220" y="160" text-anchor="middle" font-size="14" fill="#cbd5e1">→</text>
+
+    <!-- Decoder -->
+    <rect x="300" y="15" width="180" height="310" rx="10" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="390" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#7e22ce">解码器 Decoder ×6</text>
+    <!-- Masked Self-Attention -->
+    <rect x="315" y="55" width="150" height="32" rx="6" fill="#a855f7" opacity="0.12"/>
+    <text x="390" y="75" text-anchor="middle" font-size="11" fill="#7e22ce" font-weight="600">掩码自注意力</text>
+    <rect x="320" y="91" width="140" height="18" rx="4" fill="#fff" stroke="#cbd5e1"/>
+    <text x="390" y="104" text-anchor="middle" font-size="9" fill="#64748b">Add &amp; Norm</text>
+    <line x1="390" y1="109" x2="390" y2="115" stroke="#cbd5e1"/>
+    <!-- Cross-Attention -->
+    <rect x="315" y="115" width="150" height="32" rx="6" fill="#fbcfe8" opacity="0.4" stroke="#ec4899" stroke-width="1.2"/>
+    <text x="390" y="135" text-anchor="middle" font-size="11" fill="#be185d" font-weight="600">交叉注意力</text>
+    <rect x="320" y="151" width="140" height="18" rx="4" fill="#fff" stroke="#cbd5e1"/>
+    <text x="390" y="164" text-anchor="middle" font-size="9" fill="#64748b">Add &amp; Norm</text>
+    <line x1="390" y1="169" x2="390" y2="175" stroke="#cbd5e1"/>
+    <!-- FFN -->
+    <rect x="315" y="175" width="150" height="32" rx="6" fill="#a855f7" opacity="0.12"/>
+    <text x="390" y="195" text-anchor="middle" font-size="11" fill="#7e22ce" font-weight="600">前馈网络 FFN</text>
+    <rect x="320" y="211" width="140" height="18" rx="4" fill="#fff" stroke="#cbd5e1"/>
+    <text x="390" y="224" text-anchor="middle" font-size="9" fill="#64748b">Add &amp; Norm</text>
+    <!-- Output -->
+    <polygon points="386,255 390,263 394,255" fill="#ec4899"/>
+    <rect x="340" y="263" width="100" height="24" rx="6" fill="#ec4899"/>
+    <text x="390" y="280" text-anchor="middle" font-size="11" fill="#fff" font-weight="600">Linear → Softmax</text>
+    <text x="390" y="310" text-anchor="middle" font-size="10" fill="#94a3b8">输出概率分布</text>
+
+    <!-- Encoder → Decoder cross-attention connection -->
+    <path d="M220 150 L260 150 L260 131 L300 131" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+    <polygon points="298,127 306,131 298,135" fill="#6366f1"/>
+
+    <!-- 说明 -->
+    <text x="310" y="335" text-anchor="middle" font-size="11" fill="#94a3b8">Transformer：自注意力替代循环，编码器读取输入，解码器生成输出</text>
+  </svg>
+</div>
 
 ## 通俗类比
 
