@@ -43,6 +43,10 @@ export default defineConfig({
           link: '/terms/history'
         },
         {
+          text: '📝 知识测验',
+          link: '/terms/quiz'
+        },
+        {
           text: '按难度',
           items: [
             { text: '🟢 入门术语', link: '/terms/beginner' },
@@ -101,6 +105,7 @@ export default defineConfig({
 
       '/prompts/': [
         { text: '📋 总览', link: '/prompts/' },
+        { text: '📝 知识测验', link: '/prompts/quiz' },
         {
           text: '基础篇',
           items: [
@@ -184,6 +189,10 @@ export default defineConfig({
           items: [
             { text: 'Perplexity', link: '/tools/perplexity' }
           ]
+        },
+        {
+          text: '📝 知识测验',
+          link: '/tools/quiz'
         }
       ],
 
@@ -221,6 +230,10 @@ export default defineConfig({
           ]
         },
         {
+          text: '📝 知识测验',
+          link: '/dev/quiz'
+        },
+        {
           text: '面试准备',
           items: [
             { text: 'AI 面试题汇总', link: '/dev/interview-questions' }
@@ -254,6 +267,10 @@ export default defineConfig({
           items: [
             { text: '用 AI 搭建个人网站', link: '/practices/challenge-01' }
           ]
+        },
+        {
+          text: '📝 知识测验',
+          link: '/practices/quiz'
         }
       ],
     },
