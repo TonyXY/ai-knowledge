@@ -153,7 +153,7 @@ ai-knowledge/
 - [x] 补充视频/音频/搜索工具分类（Sora、Runway、ElevenLabs、Suno、Perplexity）
 - [x] 大模型对比数据更新至 2026 年中
 - [x] 12 个工具页定价核实
-- [ ] 设计工具分类
+- [x] 补充设计工具分类（Canva AI、Galileo AI、Uizard）
 
 #### 实操模块
 - [x] 补充更多新手教程（AI 翻译、AI 做 PPT、AI 数据整理）

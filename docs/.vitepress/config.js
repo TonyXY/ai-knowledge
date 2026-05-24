@@ -231,6 +231,7 @@ export default defineConfig({
           items: [
             { text: 'AI 应用架构', link: '/dev/app-architecture' },
             { text: 'MCP 协议实践', link: '/dev/mcp-practice' },
+            { text: 'MCP 生态一览', link: '/dev/mcp-ecosystem' },
             { text: '模型评估与测试', link: '/dev/model-evaluation' },
             { text: 'AI 安全', link: '/dev/ai-security' },
             { text: '本地模型部署', link: '/dev/local-models' },
