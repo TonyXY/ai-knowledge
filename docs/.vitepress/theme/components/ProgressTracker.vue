@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <a href="/ai-knowledge/progress/">查看详情 →</a>
+        <a href="/ai-knowledge/progress.html">查看详情 →</a>
       </div>
     </div>
   </div>
