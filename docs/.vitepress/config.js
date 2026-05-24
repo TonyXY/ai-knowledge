@@ -27,6 +27,7 @@ export default defineConfig({
       { text: '💬 提示词', link: '/prompts/' },
       { text: '🛠️ AI 工具', link: '/tools/' },
       { text: '🧪 实操', link: '/practices/' },
+      { text: '🔧 AI 开发', link: '/dev/' },
       { text: '🧭 学习路线', link: '/roadmap/' }
     ],
 
@@ -133,6 +134,39 @@ export default defineConfig({
             { text: 'Midjourney', link: '/tools/midjourney' },
             { text: 'DALL·E', link: '/tools/dalle' },
             { text: 'Stable Diffusion', link: '/tools/stable-diffusion' }
+          ]
+        }
+      ],
+
+      '/dev/': [
+        {
+          text: 'API 编程',
+          items: [
+            { text: 'OpenAI API 入门', link: '/dev/openai-api' },
+            { text: '流式响应 (Streaming)', link: '/dev/streaming' },
+            { text: '多模态编程 (Vision API)', link: '/dev/multimodal-vision' },
+            { text: 'Tool Calling', link: '/dev/tool-calling' },
+            { text: '结构化输出 (JSON Mode)', link: '/dev/structured-output' },
+            { text: '推理模型使用', link: '/dev/reasoning-models' }
+          ]
+        },
+        {
+          text: 'Agent 开发',
+          items: [
+            { text: 'Agent 核心概念', link: '/dev/agent-intro' },
+            { text: '构建第一个 Agent', link: '/dev/build-agent' },
+            { text: 'Tool 定义与实现', link: '/dev/tool-definition' }
+          ]
+        },
+        {
+          text: '工程实践',
+          items: [
+            { text: 'AI 应用架构', link: '/dev/app-architecture' },
+            { text: 'MCP 协议实践', link: '/dev/mcp-practice' },
+            { text: '模型评估与测试', link: '/dev/model-evaluation' },
+            { text: 'AI 安全', link: '/dev/ai-security' },
+            { text: '本地模型部署', link: '/dev/local-models' },
+            { text: 'RAG 深度实践', link: '/dev/rag-deep' }
           ]
         }
       ],
