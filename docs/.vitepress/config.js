@@ -28,7 +28,8 @@ export default defineConfig({
       { text: '🛠️ AI 工具', link: '/tools/' },
       { text: '🧪 实操', link: '/practices/' },
       { text: '🔧 AI 开发', link: '/dev/' },
-      { text: '🧭 学习路线', link: '/roadmap/' }
+      { text: '🧭 学习路线', link: '/roadmap/' },
+      { text: '📊 进度', link: '/progress/' }
     ],
 
     // 侧边栏
