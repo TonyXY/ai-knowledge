@@ -116,36 +116,47 @@ difficulty: intermediate
 
 ---
 
-## AI Skills（Agent 技能）
+## AI Skills（可安装技能包）
 
-Skills 是赋予 Agent 特定领域能力的模块化配置，分为三大生态。
+Skills 是社区开发者编写的可安装技能包，通过 `npx skills add` 标准命令安装，兼容 Claude Code、Cursor、OpenCode、Codex 等主流 AI 编程助手。
 
-### Claude Code Skills
+### 📦 技能仓库
 
-| Skill | 推荐理由 | 使用方法 |
-|-------|---------|---------|
-| **Project Context** | 让 Claude 理解项目结构和规范，回答更精准 | 在项目根目录创建 `CLAUDE.md` 或 `.claude/` 文件夹，写入架构说明和编码规范 |
-| **Code Review** | 自动化 Code Review 规则，减少人工审核时间 | 在 `.claude/rules/` 下添加 `.md` 文件，定义 Review 标准和检查清单 |
-| **Test Generation** | 统一测试风格，自动生成符合规范的测试用例 | 在 `CLAUDE.md` 中指定测试框架、Mock 策略、覆盖率目标 |
-| **Documentation** | 保持文档与代码同步，减少文档债务 | 配置文档模板和生成规则，每次提交时自动建议更新关联文档 |
+| 仓库 | 技能数 | 推荐理由 | 安装命令 |
+|------|--------|---------|---------|
+| **farmage/opencode-skills** | 66 个 | 覆盖 12 个领域（Vue/React/Spring Boot/Flutter 等框架 + 安全/监控/Embedded），含 9 个工作流命令和 365 份按需加载的参考文档 | `git clone https://github.com/farmage/opencode-skills.git && cd opencode-skills && ./install.sh` |
+| **amitdmore/opencode-power-pack** | 11 个 | 代码审查、安全审计、功能开发、前端设计四大类，含多 Agent 协作的 code-review（置信度过滤+交叉复核）和 OWASP 分桶的 security-review | `make install`（全局）或 `make install-local`（项目级） |
+| **composiohq/skills** | 14+ 条规则 | Composio 官方技能包——Tool Router 最佳实践、实时 Webhook/Event 处理、1000+ SaaS 认证集成 | `npx skills add composiohq/skills` |
+| **cline/sdk-skill** | 1 个（深度参考） | Cline Agent SDK 完整参考——API 面选择、自定义工具、插件系统、多 Agent 团队编排、生产部署 | `npx skills add cline/sdk-skill` |
 
-### Cursor / Windsurf Rules
+### 🚀 Composio（跨平台工具集成平台）
 
-| Skill | 推荐理由 | 使用方法 |
-|-------|---------|---------|
-| **Framework Rules** | 确保 AI 生成的代码框架一致，减少重构 | 在 `.cursorrules` 或 `.windsurfrules` 中写明框架版本、目录结构、命名约定 |
-| **Style Rules** | 让 AI 输出自动匹配项目风格，无需手动调整 | 在规则文件中指定 CSS 方案、组件库、代码风格（如 "使用 Tailwind 而非 CSS Modules"） |
-| **Architecture Rules** | 防止 AI 写出不符合架构设计的代码 | 描述项目的分层结构（如 "API 层 → Service 层 → Repository 层"），设定边界 |
-| **Testing Rules** | 保证每次生成的代码都有对应测试 | 配置测试文件命名规范、Mock 策略和覆盖率要求 |
+不只是技能包——是一个完整的工具集成平台，安装后在 AI 编程助手中自动可用。
 
-### OpenCode Skills
+| 功能 | 说明 |
+|------|------|
+| **接入应用** | 500+ 应用（Slack/GitHub/Notion/Google Workspace/Figma/X/TikTok） |
+| **可用工具** | 20,000+ 工具，覆盖搜索、执行、触发 |
+| **认证管理** | 一次 OAuth 连接，所有命令自动携带凭据 |
+| **安装方式** | `composio login` → `composio add github` → 在 AI 助手中直接使用 |
+| **兼容助手** | Claude Code / Codex / OpenCode / Cursor / VS Code Copilot |
 
-| Skill | 推荐理由 | 使用方法 |
-|-------|---------|---------|
-| **Agent Workflow** | 定义 Agent 如何处理复杂任务 | 编写 `.clinerules` 文件，描述任务拆解步骤和决策流程 |
-| **Tool Config** | 限制 Agent 可用工具范围，防止误操作 | 在配置文件中声明 Agent 可调用的命令和 API，白名单机制 |
-| **Memory Instructions** | 控制 Agent 如何记忆和引用历史信息 | 设置记忆持久化策略（文件/数据库/向量库），定义记忆回收规则 |
-| **Safety Rules** | 关键安全边界，防止破坏性操作 | 限制文件写入范围、禁止执行的命令、需要人工确认的操作列表 |
+### 🔧 标准安装命令说明
+
+`npx skills add` 是跨 AI 助手的标准技能安装命令：
+
+```bash
+# 安装 Composio 技能包
+npx skills add composiohq/skills
+
+# 安装 Cline SDK 参考技能
+npx skills add cline/sdk-skill
+
+# 查看已安装技能
+npx skills list
+```
+
+安装后，AI 助手会自动发现并加载对应技能文件，无需额外配置。
 
 ---
 
