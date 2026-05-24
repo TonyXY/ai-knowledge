@@ -16,13 +16,13 @@ difficulty: intermediate
 
 ### Q1：RAG 的完整流程是什么？
 
-A. 只检索 → 不生成
+    A. 只检索 → 不生成
 
-B. 检索 → 生成（先检索相关知识再让 LLM 回答）
+    B. 检索 → 生成（先检索相关知识再让 LLM 回答）
 
-C. 只生成 → 不检索
+    C. 只生成 → 不检索
 
-D. 随机生成 → 再检索确认
+    D. 随机生成 → 再检索确认
 
 <details>
 <summary>查看答案</summary>
@@ -43,13 +43,13 @@ RAG（Retrieval-Augmented Generation，检索增强生成）的完整流程是**
 
 ### Q2：Streaming（流式响应）的主要作用是什么？
 
-A. 让回答更准确
+    A. 让回答更准确
 
-B. 减少首字延迟，提升用户体验
+    B. 减少首字延迟，提升用户体验
 
-C. 降低 API 费用
+    C. 降低 API 费用
 
-D. 增加回答长度
+    D. 增加回答长度
 
 <details>
 <summary>查看答案</summary>
@@ -67,13 +67,13 @@ Streaming 的核心目的是**减少首字延迟（Time to First Token, TTFT）*
 
 ### Q3：在用 AI 编程时，第一步应该做什么？
 
-A. 直接让 AI 写完整代码
+    A. 直接让 AI 写完整代码
 
-B. 先清晰描述需求和约束条件
+    B. 先清晰描述需求和约束条件
 
-C. 让 AI 先选框架
+    C. 让 AI 先选框架
 
-D. 先把所有代码写完再问 AI
+    D. 先把所有代码写完再问 AI
 
 <details>
 <summary>查看答案</summary>
