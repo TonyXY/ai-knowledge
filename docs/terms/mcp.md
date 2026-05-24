@@ -12,61 +12,7 @@ difficulty: intermediate
 
 **MCP（Model Context Protocol）** 是由 Anthropic 提出的**开放协议**，统一了 AI 模型与外部工具、数据源之间的通信方式——相当于 AI 世界的「USB 接口」，让任何模型都能即插即用地连接各种工具和数据。
 
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:16px;margin:16px 0;overflow-x:auto;text-align:center">
-  <svg viewBox="0 0 560 300" style="max-width:560px;width:100%">
-    <!-- Host -->
-    <rect x="40" y="15" width="200" height="44" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
-    <text x="140" y="34" text-anchor="middle" font-size="12" fill="#4338ca" font-weight="700">🏠 Host 宿主应用</text>
-    <text x="140" y="50" text-anchor="middle" font-size="9" fill="#6366f1">Claude Desktop / Cursor / IDE</text>
 
-    <!-- Host→Client arrow -->
-    <polygon points="136,72 140,80 144,72" fill="#6366f1"/>
-    <line x1="140" y1="59" x2="140" y2="72" stroke="#6366f1" stroke-width="1.5"/>
-
-    <!-- Client (inside Host) -->
-    <rect x="50" y="80" width="180" height="32" rx="8" fill="#6366f1" opacity="0.1" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="140" y="101" text-anchor="middle" font-size="11" fill="#4338ca" font-weight="600">🔌 MCP Client</text>
-
-    <!-- Client→Protocol arrow -->
-    <polygon points="136,124 140,132 144,124" fill="#6366f1"/>
-    <line x1="140" y1="112" x2="140" y2="124" stroke="#6366f1" stroke-width="1.5"/>
-
-    <!-- Protocol -->
-    <rect x="50" y="132" width="180" height="24" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="1"/>
-    <text x="140" y="149" text-anchor="middle" font-size="10" fill="#854d0e" font-weight="600">📋 MCP 协议 (JSON-RPC)</text>
-
-    <!-- Protocol→Server arrow -->
-    <polygon points="136,168 140,176 144,168" fill="#6366f1"/>
-    <line x1="140" y1="156" x2="140" y2="168" stroke="#6366f1" stroke-width="1.5"/>
-
-    <!-- Server -->
-    <rect x="50" y="176" width="180" height="32" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
-    <text x="140" y="197" text-anchor="middle" font-size="11" fill="#166534" font-weight="600">🗄️ MCP Server</text>
-
-    <!-- Server connections to data sources -->
-    <path d="M230 192 L280 192 L280 40 L300 40" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
-    <polygon points="298,36 306,40 298,44" fill="#94a3b8"/>
-    <path d="M230 192 L280 192 L280 80 L300 80" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
-    <polygon points="298,76 306,80 298,84" fill="#94a3b8"/>
-    <path d="M230 192 L280 192 L280 120 L300 120" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
-    <polygon points="298,116 306,120 298,124" fill="#94a3b8"/>
-    <path d="M230 192 L280 192 L280 150 L300 150" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
-    <polygon points="298,146 306,150 298,154" fill="#94a3b8"/>
-
-    <!-- Data sources -->
-    <text x="390" y="30" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">连接的数据源</text>
-    <rect x="310" y="38" width="160" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="390" y="57" text-anchor="middle" font-size="10" fill="#475569">📁 文件系统</text>
-    <rect x="310" y="70" width="160" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="390" y="89" text-anchor="middle" font-size="10" fill="#475569">🗃️ 数据库</text>
-    <rect x="310" y="102" width="160" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="390" y="121" text-anchor="middle" font-size="10" fill="#475569">🔗 GitHub / Slack</text>
-    <rect x="310" y="134" width="160" height="28" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="390" y="153" text-anchor="middle" font-size="10" fill="#475569">🌐 搜索 / 浏览器</text>
-
-    <text x="280" y="270" text-anchor="middle" font-size="11" fill="#94a3b8">Host 嵌入 Client → 通过 MCP 协议连接 Server → 统一访问各种数据源</text>
-  </svg>
-</div>
 
 ## 通俗类比
 
