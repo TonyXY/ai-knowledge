@@ -8,7 +8,9 @@ difficulty: intermediate
 
 # 🟡 进阶术语
 
-进入进阶领域，这些概念会让你真正理解 AI 的运作方式：
+进入进阶领域，这些概念会让你真正理解 AI 的运作方式。
+
+如果说入门术语是"知道这是什么"，进阶术语就是"理解它怎么工作的"。从 Transformer 的注意力机制到 Agent 的自主决策，每掌握一个概念，你对 AI 的理解就更深一层。
 
 <div class="card-grid">
   <a href="./transformer" class="card">

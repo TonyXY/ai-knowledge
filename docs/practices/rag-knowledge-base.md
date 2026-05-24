@@ -14,7 +14,7 @@ difficulty: intermediate
 
 RAG（Retrieval-Augmented Generation）是一种让 AI 回答私有知识的技术方案：
 
-```
+```text
 用户提问 → 从文档中检索相关内容 → 将检索结果 + 问题一起发给 LLM → 生成答案
 ```
 

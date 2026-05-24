@@ -1,5 +1,6 @@
 ---
 layout: home
+description: 从零开始系统学习 AI 知识——术语、提示词、工具、实操、开发，循序渐进
 
 title: AI 知识学习
 titleTemplate: 系统学习 AI 的每一步

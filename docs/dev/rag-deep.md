@@ -180,7 +180,7 @@ model.stop_multi_process_pool(pool)
 
 ### 二阶段流程
 
-```
+```text
 用户提问 → 向量检索 Top-50 → Re-ranker 重排 → Top-5 作为上下文
 ```
 

@@ -22,7 +22,7 @@ MCP（Model Context Protocol）是 Anthropic 提出的**大模型与外部工具
 
 MCP 解决了这个问题。它定义了统一的标准：
 
-```
+```text
 你的工具  →  MCP Server  →  AI 客户端（Claude / Cursor / VS Code / ...）
 ```
 

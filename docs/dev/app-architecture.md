@@ -28,7 +28,7 @@ difficulty: intermediate
 
 **语义缓存**通过 Embedding 向量计算输入之间的相似度，在语义层面做匹配：
 
-```
+```text
 用户输入 → 生成 Embedding → 向量搜索已有缓存 → 相似度 > 阈值 → 命中
 ```
 
@@ -130,7 +130,7 @@ def retry_with_backoff(func, max_retries: int = 3, base_delay: float = 1.0):
 
 连续失败时，**不要再发了**——短暂"休息"一下：
 
-```
+```text
 连续失败 N 次 → 熔断器打开 → 后续请求直接失败
                                     ↓
                             等待冷却时间(30s)

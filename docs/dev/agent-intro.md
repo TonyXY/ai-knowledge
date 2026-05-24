@@ -14,7 +14,7 @@ difficulty: intermediate
 
 一句话定义：
 
-```
+```text
 Agent = LLM + Tools + 循环 = 一个有手有脑、能自主完成任务的 AI
 ```
 
@@ -32,7 +32,7 @@ Agent = LLM + Tools + 循环 = 一个有手有脑、能自主完成任务的 AI
 
 ReAct（Reasoning + Acting）是当前最主流的 Agent 循环模式，由 Google 在 2022 年提出。它把 Agent 的每一步拆成三个动作：
 
-```
+```text
 ┌─────────────────────────────────────────────────────┐
 │                                                     │
 │  1. Thought ──→ 2. Action ──→ 3. Observation       │
@@ -117,7 +117,7 @@ Agent 需要"记住"事情。分为两种：
 
 面对复杂任务，Agent 需要**分解目标**。例如：
 
-```
+```text
 用户："帮我做一份竞品分析报告"
 Agent 内部规划：
   1. 搜索目标公司的基本信息

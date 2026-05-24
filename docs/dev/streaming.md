@@ -20,7 +20,7 @@ difficulty: intermediate
 
 LLM API 的流式响应基于 SSE 协议。客户端发起一个 HTTP 请求后，**连接保持打开**，服务端不断推送数据块：
 
-```
+```text
 HTTP Response
 Content-Type: text/event-stream
 

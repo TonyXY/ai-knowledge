@@ -218,7 +218,7 @@ for c in contacts:
 
 **输出：**
 
-```
+```text
 姓名: 张三, 电话: 13800138000, 邮箱: zhangsan@tencent.com, 单位: 腾讯云
 姓名: 李四, 电话: 13912345678, 邮箱: None, 单位: 字节跳动
 姓名: 王五, 电话: None, 邮箱: wangwu@alibaba.com, 单位: None

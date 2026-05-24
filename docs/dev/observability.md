@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
 如果不想依赖第三方 SaaS，可以用 **OpenTelemetry** 手动埋点，配合 Grafana/Prometheus 展示：
 
-```
+```text
 OpenAI 调用 → OTel Span 上报 → OTel Collector → Grafana Tempo（Trace）+ Prometheus（指标）
 ```
 

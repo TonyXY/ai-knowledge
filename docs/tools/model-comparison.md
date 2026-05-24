@@ -1,6 +1,7 @@
 ---
 title: 大模型对比
 description: 主流 AI 大模型横向对比——Benchmark、价格、能力、选型指南
+difficulty: beginner
 ---
 
 # 📊 大模型对比

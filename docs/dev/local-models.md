@@ -1,7 +1,7 @@
 ---
 title: 本地模型部署
 description: 用 Ollama 一键跑起本地大模型——从安装到 API 调用，掌握隐私优先的 AI 开发方案
-difficulty: intermediate
+difficulty: beginner
 ---
 
 <DifficultyBadge level="beginner" />

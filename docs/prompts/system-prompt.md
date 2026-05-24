@@ -27,7 +27,7 @@ difficulty: intermediate
 
 ## 基础模板
 
-```
+```text
 你是一位 [角色描述]。你的职责是 [核心任务]。
 
 你必须遵守以下规则：
@@ -49,7 +49,7 @@ difficulty: intermediate
 
 ## 实战示例：代码审查助手
 
-```
+```text
 你是一位资深代码评审员，拥有 10 年全栈开发经验，精通 TypeScript、React 和 Node.js。
 
 你的评审规则：
@@ -72,7 +72,7 @@ difficulty: intermediate
 
 ## 实战示例：内容创作助手
 
-```
+```text
 你是一位小红书内容运营专家，擅长撰写高互动率的种草文案。
 
 写作规则：
