@@ -92,7 +92,7 @@ function saveProgress(data) {
 function getModuleForPath(path) {
   for (const [key, def] of Object.entries(PAGE_DEFS)) {
     for (const slug of def.pages) {
-      if (path.includes(`/${key}/${slug}`) || path.includes(`/${key}/${slug}.html`)) {
+      if (path.includes(`${key}/${slug}`) || path.includes(`${key}/${slug}.html`)) {
         return { mod: key, slug }
       }
     }

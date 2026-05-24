@@ -41,10 +41,10 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vitepress'
+import { useRouter, withBase } from 'vitepress'
 
 const router = useRouter()
-const go = (path) => router.go(path)
+const go = (path) => { window.location.href = withBase(path) }
 
 const STORAGE_KEY = 'ai-knowledge-progress'
 const ready = ref(false)
