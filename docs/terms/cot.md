@@ -37,6 +37,10 @@ CoT 的进阶变体：
 - [Agent](/terms/agent) —— Agent 的任务规划本质就是内部使用 CoT 进行思考
 - [大语言模型 (LLM)](/terms/llm) —— CoT 效果与模型规模强相关
 
+## 快速记忆
+
+CoT = 显式写出推理过程。不给 AI 直接问答案的机会，逼它一步一步想。记住：'Let's think step by step' 是最值的七个词。
+
 ## 延伸阅读
 
 - 原始论文：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)（Wei et al., 2022）

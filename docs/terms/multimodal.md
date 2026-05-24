@@ -39,6 +39,10 @@ difficulty: beginner
 - [大语言模型 (LLM)](/terms/llm) —— 多模态模型的基础
 - [训练 / 推理](/terms/training-inference) —— 多模态模型训练需要更多数据
 
+## 快速记忆
+
+以前 AI 只能"读"文字，现在能"看"图、"听"音频。多模态 = AI 长出了眼睛和耳朵。
+
 ## 延伸阅读
 
 - [GPT-4o 官方介绍](https://openai.com/index/hello-gpt-4o/)

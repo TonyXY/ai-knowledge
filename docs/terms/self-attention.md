@@ -33,6 +33,10 @@ difficulty: intermediate
 - [大语言模型 (LLM)](/terms/llm) —— 所有 LLM 都依赖自注意力理解上下文
 - [Embedding](/terms/embedding) —— 自注意力的输入是从词嵌入开始计算的
 
+## 快速记忆
+
+一句话里，每个词都在问其他词："咱俩关系怎么样？" 关系近的权重高，关系远的权重低——这就是自注意力。
+
 ## 延伸阅读
 
 - 原论文中的 Self-Attention 章节：[Attention Is All You Need](https://arxiv.org/abs/1706.03762) §3.2

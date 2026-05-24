@@ -37,6 +37,10 @@ RLHF 的替代方案也在快速发展，包括 **DPO（Direct Preference Optimi
 - [大语言模型 (LLM)](/terms/llm) —— RLHF 是现代 LLM 对齐训练的标准方法
 - [训练 / 推理](/terms/training-inference) —— RLHF 属于训练阶段的优化
 
+## 快速记忆
+
+RLHF = 用人类的喜好给模型打分。好比训练一条狗——做对了给零食（奖励），做错了不搭理。只不过这里训练的是几十亿参数的神经网络。
+
 ## 延伸阅读
 
 - InstructGPT 论文：[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) —— RLHF 在 ChatGPT 中的应用

@@ -44,6 +44,10 @@ difficulty: beginner
 - [Token](/terms/token) —— 上下文窗口的计数单位
 - [Prompt](/terms/prompt) —— 每次对话消耗上下文窗口容量
 
+## 快速记忆
+
+就像你的桌面——桌面越大能摊开的资料越多。128K ≈ 一本《三体》的篇幅。
+
 ## 延伸阅读
 
 - [Anthropic: 上下文窗口详解](https://docs.anthropic.com/en/docs/build-with-claude/context-windows)

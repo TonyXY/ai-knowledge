@@ -47,6 +47,10 @@ difficulty: beginner
 - [训练 / 推理](/terms/training-inference) —— 参数在训练中更新，在推理中固定
 - [大语言模型 (LLM)](/terms/llm) —— LLM 通常参数量大
 
+## 快速记忆
+
+参数量好比模型的脑细胞数量。7B ≈ 聪明大学生，70B ≈ 院士，但更多参数 ≠ 更聪明，还要看训练数据质量。
+
 ## 延伸阅读
 
 - [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) —— 参数、数据、算力的关系

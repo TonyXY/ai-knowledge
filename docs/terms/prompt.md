@@ -41,6 +41,10 @@ Prompt 通常分为两层：
 - [Token](/terms/token) —— Prompt 被切分成 Token 后送入模型
 - [微调 (Fine-tuning)](/terms/fine-tuning) —— 另一种定制模型行为的方式
 
+## 快速记忆
+
+Garbage in, garbage out——你给模型什么水平的输入，它就回你什么水平的输出。写好 Prompt 是性价比最高的 AI 技能。
+
 ## 延伸阅读
 
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)

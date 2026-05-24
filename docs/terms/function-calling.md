@@ -35,6 +35,10 @@ Function Calling 的标准流程：
 - [Prompt](/terms/prompt) —— Function Calling 的本质是让 Prompt 包含工具定义并引导模型输出结构化 JSON
 - [大语言模型 (LLM)](/terms/llm) —— 支持 Function Calling 是现代 LLM 的标配能力
 
+## 快速记忆
+
+让 LLM 学会用工具。你定义工具（查天气/发邮件），模型决定什么时候用。好比给 AI 配了一把瑞士军刀，它自己决定用哪一把。
+
 ## 延伸阅读
 
 - OpenAI Function Calling 文档：[Function calling guide](https://platform.openai.com/docs/guides/function-calling)

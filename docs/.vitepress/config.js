@@ -117,9 +117,18 @@ export default defineConfig({
         {
           text: '场景模板',
           items: [
+            { text: '翻译类', link: '/prompts/translation' },
+            { text: '学习类', link: '/prompts/learning' },
+            { text: '角色扮演类', link: '/prompts/roleplay' },
             { text: '写作类', link: '/prompts/writing' },
             { text: '编程类', link: '/prompts/coding' },
             { text: '分析类', link: '/prompts/analysis' }
+          ]
+        },
+        {
+          text: 'Prompt 优化',
+          items: [
+            { text: '优化前后对比', link: '/prompts/prompt-comparison' }
           ]
         }
       ],

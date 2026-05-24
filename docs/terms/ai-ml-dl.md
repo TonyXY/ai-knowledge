@@ -42,6 +42,10 @@ AI（人工智能）
 - [训练 / 推理](/terms/training-inference) —— ML/DL 的两个核心阶段
 - [参数](/terms/parameters) —— DL 模型学到的"知识"
 
+## 快速记忆
+
+俄罗斯套娃——AI 最外层，ML 中间层，DL 最里层。记住：AI 是梦想，ML 是方法，DL 是工具。
+
 ## 延伸阅读
 
 - [AI vs ML vs DL — Google Cloud 官方解释](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)

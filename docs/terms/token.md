@@ -45,6 +45,10 @@ Token 的三个关键用途：
 - [上下文窗口](/terms/context-window) —— 单次对话能容纳的 Token 总量
 - [Prompt](/terms/prompt) —— 你给模型的 Token 输入
 
+## 快速记忆
+
+中文里 1 个字 ≈ 1-2 个 Token。记住：你跟 AI 说的每个字都是按 Token 计费的，废话越多越贵。
+
 ## 延伸阅读
 
 - [OpenAI Tokenizer 在线工具](https://platform.openai.com/tokenizer) —— 亲自试试文字是怎么被切成 Token 的

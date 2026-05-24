@@ -42,6 +42,10 @@ difficulty: intermediate
 - [RAG](/terms/rag) —— 向量数据库是 RAG 检索环节的默认选择
 - [大语言模型 (LLM)](/terms/llm) —— 向量数据库为 LLM 提供外部知识检索能力
 
+## 快速记忆
+
+普通数据库查关键词，向量数据库查语义。搜『四腿动物』能出来『狗』——因为它们的向量离得近。
+
 ## 延伸阅读
 
 - [Milvus 文档：向量索引原理](https://milvus.io/docs/index.md)

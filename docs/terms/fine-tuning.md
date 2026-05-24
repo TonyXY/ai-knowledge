@@ -50,6 +50,10 @@ difficulty: beginner
 - [大语言模型 (LLM)](/terms/llm) —— 微调的主要对象
 - [参数](/terms/parameters) —— LoRA 只更新极少参数
 
+## 快速记忆
+
+好比一个全科医生（通用模型），你让他专攻皮肤科（微调），他只需要补充看皮肤病的数据就行，不需要重新读医学院。
+
 ## 延伸阅读
 
 - [LoRA 论文](https://arxiv.org/abs/2106.09685) —— Low-Rank Adaptation 原始论文

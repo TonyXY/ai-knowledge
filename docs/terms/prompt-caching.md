@@ -124,6 +124,10 @@ response = client.messages.create(
 - [上下文窗口](/terms/context-window) —— 缓存的前缀不能超过模型的上下文窗口限制
 - [Token](/terms/token) —— 缓存按 Token 粒度匹配，按 Token 计费
 
+## 快速记忆
+
+你的 App 每次调用 AI 都带着同样的系统指令（几万 Token）。Prompt Caching 缓存了这些重复计算——省一半钱，快两倍速度。
+
 ## 延伸阅读
 
 - [OpenAI Prompt Caching 官方指南](https://platform.openai.com/docs/guides/prompt-caching) —— 自动缓存的使用说明与最佳实践

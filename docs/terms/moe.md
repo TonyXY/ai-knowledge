@@ -40,6 +40,10 @@ MoE 的代表模型：
 - [参数](/terms/parameters) —— MoE 的总参数量可以极大，但推理时只计算活跃参数
 - [训练 / 推理](/terms/training-inference) —— MoE 在推理效率上的优势最为显著
 
+## 快速记忆
+
+MoE 像一个公司——不是一个人做所有事，而是由路由（Router）把任务派给最擅长的专家。效率高，成本低。
+
 ## 延伸阅读
 
 - MoE 综述：[A Review of Sparse Expert Models in Deep Learning](https://arxiv.org/abs/2209.01667)

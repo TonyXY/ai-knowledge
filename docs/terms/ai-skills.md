@@ -66,6 +66,10 @@ Skill = System Prompt（角色定义）
 - [RAG](/terms/rag) — Skills 的知识来源方式
 - [MCP](/terms/mcp) — Skills 的标准协议层
 
+## 快速记忆
+
+Skills = 给 Agent 安装专业技能包。好比你的手机装 App——装一个「修图 App」它就会修图，装一个「写代码 App」它就会写代码。
+
 ## 延伸阅读
 
 - [OpenCode Skills](https://github.com/opencode-ai) 开源 Agent 技能框架

@@ -37,6 +37,10 @@ KV Cache（Key-Value Cache）是 LLM 推理加速的**核心优化技术**。在
 - [上下文窗口](/terms/context-window) —— KV Cache 的内存占用随上下文长度线性增长
 - [训练 / 推理](/terms/training-inference) —— KV Cache 是推理阶段的专属优化，训练时不需要
 
+## 快速记忆
+
+聊天时 AI 每说一个词，都要回头看前面说过什么。KV Cache 就是把这些"前面说过什么"存下来，避免每次都重新算一遍。缓存的力量。
+
 ## 延伸阅读
 
 - vLLM 论文：[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) —— PagedAttention 原理
