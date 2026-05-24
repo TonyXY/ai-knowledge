@@ -1,27 +1,28 @@
 # AI 知识学习
 
-> 面向开发者的 AI 知识学习网站 — 术语·提示词·工具·实操
+> 面向开发者的 AI 知识学习网站 — 术语·提示词·工具·实操·开发
 >
 > **在线地址：** https://tonyxy.github.io/ai-knowledge/
 
 ## 内容架构
 
-四模块递进学习，每模块内分 🟢入门 / 🟡进阶 / 🔴高级 三级难度：
+五大模块递进学习，每模块内分 🟢入门 / 🟡进阶 / 🔴高级 三级难度：
 
 ```
-📖 AI 术语 →  💬 提示词 →  🛠️ AI 工具 →  🧪 实操
-（知道是什么） （学会怎么用） （选对工具）   （动手做出来）
+📖 AI 术语 →  💬 提示词 →  🛠️ AI 工具 →  🧪 实操 →  🔧 AI 开发
+（知道是什么） （学会怎么用） （选对工具）   （动手做出来） （集成到项目）
 ```
 
 | 模块 | 页面数 | 说明 |
 |------|--------|------|
-| [📖 AI 术语](https://tonyxy.github.io/ai-knowledge/terms/) | 24 | 核心概念，含发展历程 |
+| [📖 AI 术语](https://tonyxy.github.io/ai-knowledge/terms/) | 27 | 核心概念，含发展历程与三级难度导航 |
 | [💬 提示词](https://tonyxy.github.io/ai-knowledge/prompts/) | 10 | Prompt 工程，含场景模板 |
 | [🛠️ AI 工具](https://tonyxy.github.io/ai-knowledge/tools/) | 14 | 主流 AI 工具评测 + 大模型对比 |
 | [🧪 实操](https://tonyxy.github.io/ai-knowledge/practices/) | 7 | 动手教程，从新手到进阶 |
-| [🧭 学习路线](https://tonyxy.github.io/ai-knowledge/roadmap/) | 1 | 4 周学习计划 |
+| [🔧 AI 开发](https://tonyxy.github.io/ai-knowledge/dev/) | 17 | API 编程、Agent 开发、工程实践、面试准备 |
+| [🧭 学习路线](https://tonyxy.github.io/ai-knowledge/roadmap/) | 1 | 8 周完整学习计划 |
 
-总计 **57 页**，全中文，约 30,000+ 字。
+总计 **77 页**，全中文，约 50,000+ 字。
 
 ## 本地开发
 
@@ -83,10 +84,11 @@ ai-knowledge/
 │   ├── public/            # SVG 图标
 │   ├── index.md           # 首页
 │   ├── roadmap/index.md   # 学习路线图
-│   ├── terms/             # 术语模块（24 页）
+│   ├── terms/             # 术语模块（27 页）
 │   ├── prompts/           # 提示词模块（10 页）
 │   ├── tools/             # 工具模块（14 页）
-│   └── practices/         # 实操模块（7 页）
+│   ├── practices/         # 实操模块（7 页）
+│   └── dev/               # 开发模块（17 页）
 ```
 
 ## 贡献

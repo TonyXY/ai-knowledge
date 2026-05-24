@@ -43,3 +43,4 @@ difficulty: beginner
 
 - [GPT-4o 官方介绍](https://openai.com/index/hello-gpt-4o/)
 - [Gemini 多模态能力](https://deepmind.google/technologies/gemini/)
+- [多模态编程 (Vision API)](/dev/multimodal-vision) — 用代码让 AI「看见」图片

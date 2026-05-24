@@ -41,4 +41,4 @@ CoT 的进阶变体：
 
 - 原始论文：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)（Wei et al., 2022）
 - Zero-Shot CoT：[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
-- 实践建议：在 Prompt 中自己先写一个分步推理的示例，效果通常优于只加一句"Let's think step by step"。
+- [推理模型使用](/dev/reasoning-models) — o1/DeepSeek-R1 的正确打开方式

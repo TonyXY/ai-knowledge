@@ -39,4 +39,4 @@ Function Calling 的标准流程：
 
 - OpenAI Function Calling 文档：[Function calling guide](https://platform.openai.com/docs/guides/function-calling)
 - Anthropic Tool Use 文档：[Tool use with Claude](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
-- 实践建议：先从一个简单函数（如查天气）入手，理解完整的"定义→调用→回传"循环，再扩展到多函数协作。
+- [Tool Calling 实战](/dev/tool-calling) — API 调用完整示例

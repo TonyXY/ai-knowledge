@@ -7,7 +7,7 @@ titleTemplate: 系统学习 AI 的每一步
 hero:
   name: AI 知识学习
   text: 从零开始系统学习 AI
-  tagline: 术语 · 提示词 · 工具 · 实操 — 由浅入深，循序渐进
+  tagline: 术语 · 提示词 · 工具 · 实操 · 开发 — 由浅入深，循序渐进
   image:
     src: /hero.svg
     alt: AI Knowledge
@@ -21,6 +21,9 @@ hero:
     - theme: alt
       text: 💬 学习提示词
       link: /prompts/
+    - theme: alt
+      text: 🔧 开始开发
+      link: /dev/
 
 features:
   - icon: 📖
@@ -42,6 +45,11 @@ features:
     title: 动手实操
     details: 从"看完"到"会做"，分步教程带你用 AI 完成真实任务，每一篇都能立即上手实践。
     link: /practices/
+
+  - icon: 🔧
+    title: AI 开发
+    details: 面向程序员的 AI 编程实战——API 调用、Agent 开发、Tool Calling、结构化输出、模型评估与安全最佳实践。
+    link: /dev/
 ---
 
 ## 🧭 推荐学习路径
@@ -75,6 +83,13 @@ AI 知识体系庞杂，建议按以下路线循序渐进：
     <div class="step-info">
       <strong>🧪 动手实践 — 实操</strong>
       <span>把知识变成技能，用 AI 完成真实项目，真正产出价值。</span>
+    </div>
+  </li>
+  <li>
+    <span class="step-num">5</span>
+    <div class="step-info">
+      <strong>🔧 深入开发 — AI 编程</strong>
+      <span>从 API 调用到 Agent 构建，把 AI 集成到你的项目里，成为会编程的 AI 开发者。</span>
     </div>
   </li>
 </ol>
