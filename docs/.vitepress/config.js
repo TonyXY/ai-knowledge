@@ -168,6 +168,12 @@ export default defineConfig({
             { text: '本地模型部署', link: '/dev/local-models' },
             { text: 'RAG 深度实践', link: '/dev/rag-deep' }
           ]
+        },
+        {
+          text: '面试准备',
+          items: [
+            { text: 'AI 面试题汇总', link: '/dev/interview-questions' }
+          ]
         }
       ],
 
